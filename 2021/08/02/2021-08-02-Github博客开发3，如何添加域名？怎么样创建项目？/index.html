@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"btcjjj.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="GitHub博客3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github博客开发3，如何添加域名？怎么样创建项目？">
+<meta property="og:url" content="http://btcjjj.com/2021/08/02/2021-08-02-Github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%913%EF%BC%8C%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D%EF%BC%9F%E6%80%8E%E4%B9%88%E6%A0%B7%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%9F/index.html">
+<meta property="og:site_name" content="先圣博客">
+<meta property="og:description" content="GitHub博客3">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/3.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/4.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/5.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/6.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/7.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/8.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/9.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/10.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/11.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/12.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/13.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/14.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/15.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/16.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/17.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/18.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/19.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/20.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/21.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/22.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/23.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/24.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/25.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/26.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/27.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/28.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/29.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/30.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/31.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/32.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/33.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/34.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/35.png">
+<meta property="article:published_time" content="2021-08-02T11:00:00.000Z">
+<meta property="article:modified_time" content="2021-12-06T12:51:40.804Z">
+<meta property="article:author" content="先圣">
+<meta property="article:tag" content="内容创作">
+<meta property="article:tag" content="博客搭建">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/1.png">
+
+<link rel="canonical" href="http://btcjjj.com/2021/08/02/2021-08-02-Github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%913%EF%BC%8C%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D%EF%BC%9F%E6%80%8E%E4%B9%88%E6%A0%B7%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%9F/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Github博客开发3，如何添加域名？怎么样创建项目？ | 先圣博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="先圣博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">先圣博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://btcjjj.com/2021/08/02/2021-08-02-Github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%913%EF%BC%8C%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D%EF%BC%9F%E6%80%8E%E4%B9%88%E6%A0%B7%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gateway.pinata.cloud/ipfs/QmbRRdkY81kDFFYgSYdJV9h99KU8mP7bQUMQuY5HB65eV8">
+      <meta itemprop="name" content="先圣">
+      <meta itemprop="description" content="天不负，苦心人">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="先圣博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Github博客开发3，如何添加域名？怎么样创建项目？
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-08-02 19:00:00" itemprop="dateCreated datePublished" datetime="2021-08-02T19:00:00+08:00">2021-08-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-06 20:51:40" itemprop="dateModified" datetime="2021-12-06T20:51:40+08:00">2021-12-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>3.2k</span>
+            </span>
+            <div class="post-description">GitHub博客3</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="1：推荐阅读前面两篇内容。"><a href="#1：推荐阅读前面两篇内容。" class="headerlink" title="1：推荐阅读前面两篇内容。"></a>1：推荐阅读前面两篇内容。</h1><p><a href="https://btcjjj.com/2021/07/2021-07-31-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Matataki%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%B0%B8%E4%B9%85%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%EF%BC%9F/">博客：如何利用Matataki和Github搭建个人博客，永久保存数据？</a></p>
+<p><a href="https://btcjjj.com/2021/8/2021-08-01-Github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E7%AF%872%EF%BC%9A%E5%88%A9%E7%94%A8jsdelivr%E5%81%9A%E5%9B%BE%E5%BA%8A%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E3%80%82/">博客：Github博客开发篇2：利用jsdelivr做图床分享链接。</a></p>
+<h1 id="2：如何备份数据和仓库？"><a href="#2：如何备份数据和仓库？" class="headerlink" title="2：如何备份数据和仓库？"></a>2：如何备份数据和仓库？</h1><h2 id="1：下载备份"><a href="#1：下载备份" class="headerlink" title="1：下载备份"></a>1：下载备份</h2><p>点击<strong>Code</strong>，然后选择<strong>Download ZIP</strong>下载压缩文件包。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/1.png" alt="img"></p>
+<p>我们可以轻松的下载整个文件夹的所有内容。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/2.png" alt="img"></p>
+<p>我们解压后就会得到全部的文件了。</p>
+<h2 id="2：克隆仓库"><a href="#2：克隆仓库" class="headerlink" title="2：克隆仓库"></a>2：克隆仓库</h2><p>这个操作不仅仅用于克隆自己的仓库，也可以来克隆其他人的仓库，趴代码看看。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/3.png" alt="img"></p>
+<p>点击右上角的**+号**，选择 <strong>Import repository</strong>来克隆仓库。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/4.png" alt="img"></p>
+<p>这里是解释一下，如果是建立博客建议用公开的仓库，私人仓库有诸多的限制。</p>
+<p>当然，如果你愿意付费，当我没说这话。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/5.png" alt="img"></p>
+<p>稍等片刻就会发现克隆成功。</p>
+<p>在修改一些你觉得危险的操作的时候，可以先克隆一个仓库来备份。</p>
+<p>或者也可以去克隆别人的仓库来修改内容，毕竟有些人的博客很漂亮，但是你自己去一行行的写就很麻烦了。</p>
+<h1 id="3：添加顶级域名"><a href="#3：添加顶级域名" class="headerlink" title="3：添加顶级域名"></a>3：添加顶级域名</h1><p>虽然GitHub会自动给你分配一个二级的域名，诸如：</p>
+<p><a target="_blank" rel="noopener" href="https://keyxec.github.io/key/">https://keyxec.github.io/key/</a></p>
+<p>你的GitHub用户名.github.io/仓库名/</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/6.png" alt="img"></p>
+<p>虽然有时候可以访问，但是有的时候会出现问题，而且二级域名也不方便记忆。</p>
+<p>我去网上搜索了很多教程，最后发现并没有这么麻烦，而且域名也不需要备案就可以使用。</p>
+<p>推荐使用阿里云或者腾讯云的域名。</p>
+<p>本文以阿里云为例子，将域名解析到刚才克隆的网站：</p>
+<p><a target="_blank" rel="noopener" href="https://keyxec.github.io/key1/">https://keyxec.github.io/key1/</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/7.png" alt="img"></p>
+<h2 id="1：购买域名"><a href="#1：购买域名" class="headerlink" title="1：购买域名"></a>1：购买域名</h2><p>顶级域名当然没有免费的，tk那种除外，但是相信我，一个域名要不了多少钱，没有必要搞的那么麻烦。</p>
+<p>阿里云直接用支付宝登录即可，然后去他旗下的万网购买域名，当然去腾讯云也是一样的。</p>
+<p><a target="_blank" rel="noopener" href="https://www.aliyun.com/">https://www.aliyun.com/</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/8.png" alt="img"></p>
+<p>登录账号，点击<strong>控制台</strong>，然后再选择<strong>域名</strong>。</p>
+<p><a target="_blank" rel="noopener" href="https://wanwang.aliyun.com/">https://wanwang.aliyun.com/</a></p>
+<p>进入万网的域名注册页面。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/9.png" alt="img"></p>
+<p>1元起，指的是新用户首年1元购，但是续费就要原价了。</p>
+<p>如果没有特殊的需求，建议还是注册后缀为.com和.cn的为好。</p>
+<p>输入你想注册的域名，然后查询：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/10.png" alt="img"></p>
+<p>不要被迷惑了，虽然.xyz域名首年只需要8元，但是续费却需要……69元/年。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/11.png" alt="img"></p>
+<p>所以，还不如选择.com域名注册。</p>
+<p>你们可以自己去尝试一下，注册什么域名比较好。</p>
+<p>不管是什么域名，选择好了之后，加入清单，然后付款（这里需要提前准备好一套认证的个人模板），最后购买成功，域名实名认证成功。</p>
+<p>当域名的状态是正常的时候就可以使用了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/12.png" alt="img"></p>
+<h2 id="2：解析域名"><a href="#2：解析域名" class="headerlink" title="2：解析域名"></a>2：解析域名</h2><p>解析域名的目的是为了让域名指向你的github仓库页面，也就是指到博客。</p>
+<p>让其他人可以通过域名访问博客，又好记又省心。</p>
+<p>我们首先要去ping一下你的博客地址。</p>
+<p><a target="_blank" rel="noopener" href="https://keyxec.github.io/">https://keyxec.github.io/</a></p>
+<p>就是ping一下这个网址，当然也可以通过一些工具在线ping。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/13.png" alt="img"></p>
+<p>随便百度一下就可以找到提供相关服务的网站。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/14.png" alt="img"></p>
+<p>我们选择一个结果，貌似啥账号都是这个IP，我看别人的教程也是这个IP地址。</p>
+<p>185.199.109.153 </p>
+<p>通过GitHub官方的教程和一些其他地方的教程，我们要进行如下的操作，添加两条CNAME解析记录。</p>
+<p>回到阿里云的域名管理界面，我们点击解析：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/15.png" alt="img"></p>
+<p>然后进入了一个这样的界面，我们继续<strong>添加记录</strong>：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/16.png" alt="img"></p>
+<p>我们添加记录，记录类型是<strong>CNAME</strong>，主机记录<strong>默认留空</strong>，记录值写：<strong>keyxec.github.io</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/17.png" alt="img"></p>
+<p>点击确定，即可添加该解析。</p>
+<p>（TLL选择10分钟，10分钟后即可生效）</p>
+<p>我们再依葫芦画瓢，再添加一条CNAME记录，只是把主机名改成WWW而已。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/18.png" alt="img"></p>
+<p>这样即使带上www也可以访问网站了。</p>
+<p>最后我们会拥有两个记录，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/19.png" alt="img"></p>
+<p>我们再去仓库修改两项内容：</p>
+<h3 id="1：修改显示主页。"><a href="#1：修改显示主页。" class="headerlink" title="1：修改显示主页。"></a><strong>1：修改显示主页。</strong></h3><p>我们找到<strong>key1</strong>仓库下面的**_config.yml**文件，然后修改：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/20.png" alt="img"></p>
+<p>我们需要把上图的<a target="_blank" rel="noopener" href="https://keyxec.github.io/key%E6%94%B9%E6%88%90[https://wriiqu.cn](https://wriiqu.cn/)%E7%84%B6%E5%90%8E%E5%86%8D%E4%BF%9D%E5%AD%98%E3%80%82">https://keyxec.github.io/key改成[https://wriiqu.cn](https://wriiqu.cn/)然后再保存。</a></p>
+<p>保存好了之后稍等片刻即可。</p>
+<h3 id="2：在GitHub仓库的settings-pages里面添加域名。"><a href="#2：在GitHub仓库的settings-pages里面添加域名。" class="headerlink" title="2：在GitHub仓库的settings/pages里面添加域名。"></a>2：在GitHub仓库的settings/pages里面添加域名。</h3><p>我们直接打开：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/keyxec/key1/settings/pages">https://github.com/keyxec/key1/settings/pages</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/21.png" alt="img"></p>
+<p>在上图的<strong>Custom domain</strong>的下面输入域名，然后点击<strong>Save</strong>保存即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/22.png" alt="img"></p>
+<p>如果你是第一次绑定域名，他会给你生成一个证书。</p>
+<p>请稍等大概15分钟左右即可（也许是20分钟）。</p>
+<p>当证书没有生成的时候，虽然可以访问你的网站，但是谷歌浏览器会提示风险。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/23.png" alt="img"></p>
+<p>他会提示有风险，稍等证书生成完成，就会自动去除这个图标了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/24.png" alt="img"></p>
+<p>大家可以访问我的网址查看这个临时小站（随时可能关闭）。</p>
+<p><a target="_blank" rel="noopener" href="http://wriiqu.cn/">wriiqu.cn</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.wriiqu.cn/">www.wriiqu.cn</a></p>
+<p>原因是这个域名是花2块钱买过来的临时域名（1个月后到期），只是作为本次教程演示使用的。</p>
+<p>当然，大家要做博客肯定是自己去注册一个喜欢的域名，而且也不贵。</p>
+<h2 id="3：缺点"><a href="#3：缺点" class="headerlink" title="3：缺点"></a>3：缺点</h2><p>不知道是我遇到了这种问题，还是大家都遇到了这种问题。</p>
+<p>那就是如果通过上面的方式绑定了域名后，你更新仓库的文件内容，包括增，删，改等操作时，系统会自动恢复原来的浏览页面：</p>
+<p><a target="_blank" rel="noopener" href="https://keyxec.github.io/key1/">https://keyxec.github.io/key1/</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/25.png" alt="img"></p>
+<p>这种时候你需要手动的再次修改一次<strong>Custom domain</strong>的内容，更新一下域名就好了。</p>
+<h2 id="4：备选的记录方式"><a href="#4：备选的记录方式" class="headerlink" title="4：备选的记录方式"></a>4：备选的记录方式</h2><p>在某些教程中，提到了这种方法。</p>
+<p>不是添加两条CNAME记录，而是添加两条A记录。</p>
+<p>我们可以重新回顾上面的操作，把CNAME就里面的keyxec,github.io换成我们ping到的IP地址即可。（185.199.109.153 ）</p>
+<p>同样在主机名留空和添加www这两项。</p>
+<p>这样貌似也可以访问，但是问题更多，所以就不推荐了。</p>
+<h2 id="5：其他的操作"><a href="#5：其他的操作" class="headerlink" title="5：其他的操作"></a>5：其他的操作</h2><p>这三篇的基础操作已经讲解完成了。</p>
+<p>包括，注册账号，搭建博客，修改内容，添加域名等操作。</p>
+<p>但是更酷更有趣的操作请自己去验证。</p>
+<p>另外，说一下导航栏的问题。（其实把导航栏去掉也不影响观看）</p>
+<p>我们知道，在前面我们的导航里面有4项内容，可是到目前为止只有文章的操作。</p>
+<p>今天暂时就说一下项目的操作：</p>
+<p>打开官方文档：</p>
+<p><a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/wiki-settings/">如何使用半自动化的文档系统</a></p>
+<p><a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/wiki-settings/">https://xaoxuu.com/wiki/stellar/wiki-settings/</a></p>
+<p>从网址上面看，这就是一个项目，项目名称叫stellar，也就是这个博客的主题。</p>
+<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/26.png" alt="img"></p>
+<p>当然，我们就不适用他的这个项目名了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/27.png" alt="img"></p>
+<p>首先我们要创建一个途径，source/wiki/项目名/项目文件。</p>
+<p>然后在里面的wiki那一项，要写上对应的项目名。</p>
+<p>当然，你也可以插入一条order作为排序函数。数值越小越靠前，默认为0。</p>
+<p>（order数值最小的会当做项目主页）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/28.png" alt="img"></p>
+<p>我们可以看到，刚才创建的项目已经更新了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/29.png" alt="img"></p>
+<p>懂了没，这就是刚才的预览结果。</p>
+<h3 id="创建项目的第二个文件"><a href="#创建项目的第二个文件" class="headerlink" title="创建项目的第二个文件"></a>创建项目的第二个文件</h3><p>我们再加入一个文件在这个项目中来测试一下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/30.png" alt="img"></p>
+<p>我们就写一个这么简单的内容，看看他是如何反应的。</p>
+<p>上面最重要的就是加入了一行order作为排序，也许会达到我们的要求。</p>
+<p>最后刷新了还是一样，并没有想象中的效果。</p>
+<p>这是为什么呢？</p>
+<p>我知道了，大概是那条语法不兼容，我们删除order那一行即可。</p>
+<p>最后，显示结果如下所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/31.png" alt="img"></p>
+<p>有些类似于标题的效果，但又不是标题，项目可以把多个文章合并到一起，并且不会在首页发布。</p>
+<h3 id="完善项目（图片，说明，标签等）"><a href="#完善项目（图片，说明，标签等）" class="headerlink" title="完善项目（图片，说明，标签等）"></a>完善项目（图片，说明，标签等）</h3><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/32.png" alt="img"></p>
+<p>大概有这么几项：</p>
+<p>subtitle：副标题</p>
+<p>tags：标签</p>
+<p>cover：屏蔽相关内容</p>
+<p>logo：图标</p>
+<p>src：图片链接</p>
+<p>small large：大小尺寸</p>
+<p>description：说明</p>
+<p>大家可以选择性的填写，最后是要在这个文件里面更新上述内容：</p>
+<p><strong>source/_data/projects.yml</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/33.png" alt="img"></p>
+<p>我们来尝试一下，看看效果如何？</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/34.png" alt="img"></p>
+<p>上面就已经显示了，还不错，基本的都已经做到了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/2/35.png" alt="img"></p>
+<p>在tags里面可以添加多个标签，如图所示即可。注意是在全拼的情况下的逗号。</p>
+<p>测试的项目地址：<a target="_blank" rel="noopener" href="https://keyxec.github.io/key/wiki/">https://keyxec.github.io/key/wiki/</a></p>
+<p>暂时先就更新到这里，明天就换个话题。</p>
+
+    </div>
+    <div>
+    
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+    
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>先圣
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://btcjjj.com/2021/08/02/2021-08-02-Github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%913%EF%BC%8C%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D%EF%BC%9F%E6%80%8E%E4%B9%88%E6%A0%B7%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%9F/" title="Github博客开发3，如何添加域名？怎么样创建项目？">http://btcjjj.com/2021/08/02/2021-08-02-Github博客开发3，如何添加域名？怎么样创建项目？/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/" rel="tag"># 内容创作</a>
+              <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="tag"># 博客搭建</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/08/01/2021-08-01-Github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E7%AF%872%EF%BC%9A%E5%88%A9%E7%94%A8jsdelivr%E5%81%9A%E5%9B%BE%E5%BA%8A%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E3%80%82/" rel="prev" title="Github博客开发篇2：利用jsdelivr做图床分享链接。">
+      <i class="fa fa-chevron-left"></i> Github博客开发篇2：利用jsdelivr做图床分享链接。
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/08/10/2021-08-10-%E8%AE%B0%E5%BD%95%E6%98%AF%E6%AF%8F%E4%B8%80%E4%B8%AA%E5%B8%81%E5%9C%88%E4%BA%BA%E7%9A%84%E5%BF%85%E9%A1%BB%E5%93%81%E8%B4%A8%E3%80%82/" rel="next" title="记录是每一个币圈人的必须品质。">
+      记录是每一个币圈人的必须品质。 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1363948882&auto=1&height=66"></iframe>
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1%EF%BC%9A%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%E5%89%8D%E9%9D%A2%E4%B8%A4%E7%AF%87%E5%86%85%E5%AE%B9%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">1：推荐阅读前面两篇内容。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2%EF%BC%9A%E5%A6%82%E4%BD%95%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%92%8C%E4%BB%93%E5%BA%93%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">2：如何备份数据和仓库？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%EF%BC%9A%E4%B8%8B%E8%BD%BD%E5%A4%87%E4%BB%BD"><span class="nav-number">2.1.</span> <span class="nav-text">1：下载备份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%EF%BC%9A%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93"><span class="nav-number">2.2.</span> <span class="nav-text">2：克隆仓库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3%EF%BC%9A%E6%B7%BB%E5%8A%A0%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D"><span class="nav-number">3.</span> <span class="nav-text">3：添加顶级域名</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%EF%BC%9A%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D"><span class="nav-number">3.1.</span> <span class="nav-text">1：购买域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%EF%BC%9A%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D"><span class="nav-number">3.2.</span> <span class="nav-text">2：解析域名</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%EF%BC%9A%E4%BF%AE%E6%94%B9%E6%98%BE%E7%A4%BA%E4%B8%BB%E9%A1%B5%E3%80%82"><span class="nav-number">3.2.1.</span> <span class="nav-text">1：修改显示主页。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%EF%BC%9A%E5%9C%A8GitHub%E4%BB%93%E5%BA%93%E7%9A%84settings-pages%E9%87%8C%E9%9D%A2%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D%E3%80%82"><span class="nav-number">3.2.2.</span> <span class="nav-text">2：在GitHub仓库的settings&#x2F;pages里面添加域名。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%EF%BC%9A%E7%BC%BA%E7%82%B9"><span class="nav-number">3.3.</span> <span class="nav-text">3：缺点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%EF%BC%9A%E5%A4%87%E9%80%89%E7%9A%84%E8%AE%B0%E5%BD%95%E6%96%B9%E5%BC%8F"><span class="nav-number">3.4.</span> <span class="nav-text">4：备选的记录方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%EF%BC%9A%E5%85%B6%E4%BB%96%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="nav-number">3.5.</span> <span class="nav-text">5：其他的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-number">3.5.1.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E7%9A%84%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%96%87%E4%BB%B6"><span class="nav-number">3.5.2.</span> <span class="nav-text">创建项目的第二个文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%8C%E5%96%84%E9%A1%B9%E7%9B%AE%EF%BC%88%E5%9B%BE%E7%89%87%EF%BC%8C%E8%AF%B4%E6%98%8E%EF%BC%8C%E6%A0%87%E7%AD%BE%E7%AD%89%EF%BC%89"><span class="nav-number">3.5.3.</span> <span class="nav-text">完善项目（图片，说明，标签等）</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="先圣"
+      src="https://gateway.pinata.cloud/ipfs/QmbRRdkY81kDFFYgSYdJV9h99KU8mP7bQUMQuY5HB65eV8">
+  <p class="site-author-name" itemprop="name">先圣</p>
+  <div class="site-description" itemprop="description">天不负，苦心人</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tsl1997" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tsl1997" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:btcabc@163.com" title="E-Mail → mailto:btcabc@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/btc999xs" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;btc999xs" rel="noopener" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/7502988975" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7502988975" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">先圣</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

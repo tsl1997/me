@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"btcjjj.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="GitHub博客1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何利用Matataki和Github搭建个人博客，永久保存数据？">
+<meta property="og:url" content="http://btcjjj.com/2021/07/31/2021-07-31-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Matataki%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%B0%B8%E4%B9%85%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%EF%BC%9F/index.html">
+<meta property="og:site_name" content="先圣博客">
+<meta property="og:description" content="GitHub博客1">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/3.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/4.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/5.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/6.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/7.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/8.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/9.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/10.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/11.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/12.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/13.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/14.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/15.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/16.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/17.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/18.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/19.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/20.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/21.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/22.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/23.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/24.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/25.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/26.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/27.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/28.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/29.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/30.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/31.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/32.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/33.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/34.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/35.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/36.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/37.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/38.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/39.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/40.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/41.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/42.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/43.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/44.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/45.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/46.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/47.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/48.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/49.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/50.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/51.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/52.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/53.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/54.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/55.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/56.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/57.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/58.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/59.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/60.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/61.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/62.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/63.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/64.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/65.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/66.png">
+<meta property="article:published_time" content="2021-07-31T11:00:00.000Z">
+<meta property="article:modified_time" content="2021-12-06T12:52:34.804Z">
+<meta property="article:author" content="先圣">
+<meta property="article:tag" content="内容创作">
+<meta property="article:tag" content="博客搭建">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/1.png">
+
+<link rel="canonical" href="http://btcjjj.com/2021/07/31/2021-07-31-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Matataki%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%B0%B8%E4%B9%85%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%EF%BC%9F/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>如何利用Matataki和Github搭建个人博客，永久保存数据？ | 先圣博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="先圣博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">先圣博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://btcjjj.com/2021/07/31/2021-07-31-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Matataki%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%B0%B8%E4%B9%85%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gateway.pinata.cloud/ipfs/QmbRRdkY81kDFFYgSYdJV9h99KU8mP7bQUMQuY5HB65eV8">
+      <meta itemprop="name" content="先圣">
+      <meta itemprop="description" content="天不负，苦心人">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="先圣博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          如何利用Matataki和Github搭建个人博客，永久保存数据？
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-07-31 19:00:00" itemprop="dateCreated datePublished" datetime="2021-07-31T19:00:00+08:00">2021-07-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-06 20:52:34" itemprop="dateModified" datetime="2021-12-06T20:52:34+08:00">2021-12-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>3k</span>
+            </span>
+            <div class="post-description">GitHub博客1</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="1：目标"><a href="#1：目标" class="headerlink" title="1：目标"></a>1：目标</h1><p>首先最重要的事情是：<strong>数据安全。</strong></p>
+<p>其次才是访问的情况：<strong>速度流畅。</strong></p>
+<h1 id="2：基础"><a href="#2：基础" class="headerlink" title="2：基础"></a>2：基础</h1><p>我们需要哪些基础？</p>
+<ul>
+<li>尽量用最简单的话语来描述问题所在。</li>
+<li>用常见的方法解决问题。</li>
+</ul>
+<p>你可以看前面的内容，也可以不看：</p>
+<p><a target="_blank" rel="noopener" href="https://bihu.com/article/1855571756">为什么要创建博客来保存数据？</a></p>
+<p>本篇教程将重新注册账号，来讲解在过程中会遇到的问题，以及一些解决的方法。</p>
+<h1 id="3：开始"><a href="#3：开始" class="headerlink" title="3：开始"></a>3：开始</h1><h2 id="1：我们需要一个githubi账号："><a href="#1：我们需要一个githubi账号：" class="headerlink" title="1：我们需要一个githubi账号："></a>1：我们需要一个githubi账号：</h2><p><a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/1.png" alt="img"></p>
+<p>我们需要准备一个邮箱账号，这个就不用多说了。</p>
+<p>本次使用使用的邮箱账号为：<strong><a href="mailto:&#120;&#x73;&#x40;&#x62;&#116;&#x63;&#x61;&#x62;&#99;&#46;&#x63;&#x6e;">&#120;&#x73;&#x40;&#x62;&#116;&#x63;&#x61;&#x62;&#99;&#46;&#x63;&#x6e;</a></strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/2.png" alt="img"></p>
+<p>我们继续下一步操作。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/3.png" alt="img"></p>
+<p>创建密码，密码要求至少8位字符，包括数字和小写字母。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/4.png" alt="img"></p>
+<p>输入用户名，下面显示为<strong>用户名可用</strong>即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/5.png" alt="img"></p>
+<p>接受产品的更新公告，输入y。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/6.png" alt="img"></p>
+<p>恶心的验证码出来了。</p>
+<p>我们再点击创建。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/7.png" alt="img"></p>
+<p>邮件认证，我们去邮箱找到GitHub发来的邮箱。</p>
+<p>可用使用浏览器记住密码。</p>
+<p>貌似收不到，我们更换其他的邮箱试试看：</p>
+<p><a href="mailto:&#98;&#x74;&#99;&#97;&#98;&#x63;&#x40;&#118;&#105;&#x70;&#46;&#113;&#x71;&#46;&#99;&#111;&#x6d;">&#98;&#x74;&#99;&#97;&#98;&#x63;&#x40;&#118;&#105;&#x70;&#46;&#113;&#x71;&#46;&#99;&#111;&#x6d;</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/8.png" alt="img"></p>
+<p>选择上面框框的部分其中一个点击即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/9.png" alt="img"></p>
+<p>出现这个就代表你的邮箱已经认证成功。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/10.png" alt="img"></p>
+<p>你也可以前往个人页面去查看，邮箱已经认证了。</p>
+<p>（这时候你的GitHub账号地址就是：<a target="_blank" rel="noopener" href="https://github.com/keyxec%EF%BC%89">https://github.com/keyxec）</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/11.png" alt="img"></p>
+<h2 id="2：我们需要一个matataki账号："><a href="#2：我们需要一个matataki账号：" class="headerlink" title="2：我们需要一个matataki账号："></a>2：我们需要一个matataki账号：</h2><p><a target="_blank" rel="noopener" href="https://www.matataki.io/">https://www.matataki.io/</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/12.png" alt="img"></p>
+<p>我们点击注册去注册一个账号：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/13.png" alt="img"></p>
+<p>我们去邮箱查看验证码：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/14.png" alt="img"></p>
+<p>然后填入验证码，注册成功。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/15.png" alt="img"></p>
+<p>我们登陆后，选择<strong>头像，我的账户。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/16.png" alt="img"></p>
+<p>你可以修改一下昵称（后面可以反复修改）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/17.png" alt="img"></p>
+<p>下滑到最下方，点击验证码，保存即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/18.png" alt="img"></p>
+<p>选择独立子站，推荐打开教程指南，一边观看一边操作。</p>
+<p>前面先去<strong>账号管理</strong>，里面<strong>绑定github账号</strong>再来操作。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/19.png" alt="img"></p>
+<p>我们去绑定账号。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/20.png" alt="img"></p>
+<p>如果你没有退出GitHub账号，那么可以直接授权。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/21.png" alt="img"></p>
+<p>看，绑定成功了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/22.png" alt="img"></p>
+<p>再回到<strong>独立子站</strong>，我们就可以<strong>创建仓库</strong>了。</p>
+<p>仓库的名称建议自己取一个可以理解的单词，或者好记的。</p>
+<p>比如，我输入key：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/23.png" alt="img"></p>
+<p>完成验证码并且创建。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/24.png" alt="img"></p>
+<p>这里点击<strong>前往页面设置</strong>，其实并没有开启独立子站的<strong>网页浏览服务</strong>，我们需要手动打开它。</p>
+<p>我们回到GitHub去看看，就会发现多了一个名叫key的仓库。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/25.png" alt="img"></p>
+<p>我们打开它。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/26.png" alt="img"></p>
+<p>参考地址：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/keyxec/key/settings/pages">https://github.com/keyxec/key/settings/pages</a></p>
+<p>（将对应的账号和仓库换成你自己的即可）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/27.png" alt="img"></p>
+<p>我们选择<strong>None</strong>，然后再选择<strong>main</strong>，最后再点击<strong>Save</strong>确认。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/28.png" alt="img"></p>
+<p>我们就拥有了一个子站的浏览地址：</p>
+<p><a target="_blank" rel="noopener" href="https://keyxec.github.io/key/">https://keyxec.github.io/key/</a></p>
+<p>现在还无法打开，因为我们需要上传一篇文章，才可以显示内容。</p>
+<p>我们回到<strong>独立子站</strong>，看看是否已经同步开通成功。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/29.png" alt="img"></p>
+<p>我们的matataki已经成功了，那么我们如何使用他呢？</p>
+<h2 id="3：发布第一篇存储在GitHub独立子站的文章"><a href="#3：发布第一篇存储在GitHub独立子站的文章" class="headerlink" title="3：发布第一篇存储在GitHub独立子站的文章"></a>3：发布第一篇存储在GitHub独立子站的文章</h2><p>我们点击右上角，发文章，进入发文页面。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/30.png" alt="img"></p>
+<p>当然，我们也可以一键导入其他平台的文章，但是我推荐手动复制过来。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/31.png" alt="img"></p>
+<p>因为导入文章只是懒人的做法，而且文章的源文件还是在被导入的平台。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/32.png" alt="img"></p>
+<p>我们就暂时写一个这么简单的两句话。</p>
+<p>然后点击<strong>发布</strong>，进入<strong>发布页面</strong>，你可以选择一些可选项。</p>
+<p>包括封面图片，标签，关联FAN票，授权许可协议等多项内容。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/33.png" alt="img"></p>
+<p>但是这不是最重要的，最重要的在最下面，文章的<strong>存储位置</strong>，你可以选择<strong>GitHub</strong>了。</p>
+<p>原来只能保存在<strong>IPFS</strong>上面，选择可以选择保存到<strong>独立子站</strong>。（两者只能选其一）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/34.png" alt="img"></p>
+<p>你可以把文章的标签也同步过去。</p>
+<p>当你<strong>发布成功</strong>后，存储位置会变成<strong>独立子站</strong>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/35.png" alt="img"></p>
+<p>上面的两个都可以打开你的存储地址，我们选择在<strong>独立子站阅读本文</strong>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/36.png" alt="img"></p>
+<p>他会出现一个老式博客的界面，我相信这种你是不会喜欢的。</p>
+<p>（下面是相关的数据说明示范图）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/37.png" alt="img"></p>
+<p>那么，如何换皮肤呢？</p>
+<p>我们重新回到<strong>独立子站</strong>，来修改一些内容。</p>
+<p>标题，作者，语言（简体），时区（东八区），主提（这就是皮肤了）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/38.png" alt="img"></p>
+<p>我们选择其他的看一下，究竟如何？</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/39.png" alt="img"></p>
+<p>他会向你确认，因为有的主题的确会有各种不兼容的问题，所以开始就选择一个好看的主题比较好。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/40.png" alt="img"></p>
+<p>这种就明显好看多了。</p>
+<p>在测试完这几种皮肤后，我选择了<strong>stellar</strong>的主题，因为他太简洁了，比较适合我。</p>
+<p>（如果大家有兴趣可以去全部测试一下，我就不再本文演示了）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/41.png" alt="img"></p>
+<p>我们看看选择了之后的页面是怎么样的：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/42.png" alt="img"></p>
+<p>现在貌似会自动添加随机封面，当然后面会告诉你怎么样添加固定封面。</p>
+<p>浅白色，淡雅，比较适合我。</p>
+<p>更多的换皮教程，参考文章：</p>
+<p><a target="_blank" rel="noopener" href="https://www.matataki.io/p/8927">想要自己切换独立子站的主题</a></p>
+<h1 id="4：进阶教程"><a href="#4：进阶教程" class="headerlink" title="4：进阶教程"></a>4：进阶教程</h1><h2 id="1：如果修改界面？"><a href="#1：如果修改界面？" class="headerlink" title="1：如果修改界面？"></a>1：如果修改界面？</h2><p>我们可以找到这种图片，来自AndoAlpha。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/43.png" alt="img"></p>
+<p>但是这里却没有修改公告栏的内容，我想自定义公告栏，这是合理的请求。</p>
+<p>于是，我找到了<strong>stellar</strong>的热门教程。</p>
+<p><a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar">https://xaoxuu.com/wiki/stellar</a></p>
+<p>非常感谢这位名叫xaoxuu的用户提供的教程。</p>
+<p>推荐大家去看一下，虽然有的命令不兼容，但是绝大部分是有帮助的。</p>
+<p>其他的主题修改方式也可以去查看一些热门的教程。</p>
+<h3 id="自定义头像"><a href="#自定义头像" class="headerlink" title="自定义头像"></a>自定义头像</h3><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/44.png" alt="img"></p>
+<p>开始就可以自定义头像，只要可以定义头像，肯定是需要来一个的。</p>
+<p>我们打开：<a target="_blank" rel="noopener" href="https://github.com/keyxec/key">https://github.com/keyxec/key</a></p>
+<p>选择source（应该是默认的）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/45.png" alt="img"></p>
+<p>我们打开**_config.yml**文件，然后选择右边的小铅笔修改内容。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/46.png" alt="img"></p>
+<p>我们添加一行，随便选择一行，为了醒目我就写在第二行了。</p>
+<p><strong>avatar: 您的头像链接</strong></p>
+<p>（暂时就先随便找一个图片示范一下，如何获取连接）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/47.png" alt="img"></p>
+<p>审查元素，获取图片地址。</p>
+<p>或者，鼠标右键，复制图片地址。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/48.png" alt="img"></p>
+<p>然后我们滑到下面，选择<strong>Commit changes</strong>更新文件：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/49.png" alt="img"></p>
+<p>文件更新需要稍等片刻才可以去查看网页内容。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/50.png" alt="img"></p>
+<p>可能是这个图片链接不怎么样，我们换一个图片链接来尝试一下。</p>
+<p>找到一些免费的图床。</p>
+<p><a target="_blank" rel="noopener" href="https://imgurl.org/">https://imgurl.org/</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/51.png" alt="img"></p>
+<p>我们这样就获得了图片的链接。</p>
+<p>我们再重复上面的操作即可，稍后刷新网页就成功了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/52.png" alt="img"></p>
+<h3 id="自定义状态栏"><a href="#自定义状态栏" class="headerlink" title="自定义状态栏"></a>自定义状态栏</h3><p>引用我自己的内容：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/53.png" alt="img"></p>
+<p>我们再创建这个文件：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/tsl1997/Myspace/tree/source/source"><strong>source</strong></a><strong>/</strong><a target="_blank" rel="noopener" href="https://github.com/tsl1997/Myspace/tree/source/source/_data"><strong>_data</strong></a>**/**<strong>widgets.yml</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/54.png" alt="img"></p>
+<p>我们直接复制内容：</p>
+<p>welcome:    </p>
+<p>​    layout: markdown</p>
+<p>​    title: 欢迎欢迎</p>
+<p>​    content:</p>
+<p>​    - ‘欢迎光临KEY小站，这是公告栏。 ‘</p>
+<p>把上面的公告修改成为自己的即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/55.png" alt="img"></p>
+<p>最后还是滑到最下面，点击绿色的按钮保存。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/56.png" alt="img"></p>
+<p>如上图所示，已经修改成功了。</p>
+<p>但是我还是觉得少了什么，于是又开始了复制大法。</p>
+<p>自定义导航栏</p>
+<p>因为缺少导航栏呀，原来如此。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/57.png" alt="img"></p>
+<p>这是官方的解读内容。</p>
+<p>我们来修改这个文件内容。（如果没有就创建）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/58.png" alt="img"></p>
+<p>我们保存，来看一下效果如何？</p>
+<p>刚才有一个错误，就是不要添加blog。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/59.png" alt="img"></p>
+<p>等下我们再看一下。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/60.png" alt="img"></p>
+<h2 id="2：在GitHub直接发布文章内容。"><a href="#2：在GitHub直接发布文章内容。" class="headerlink" title="2：在GitHub直接发布文章内容。"></a>2：在GitHub直接发布文章内容。</h2><p>我们的文章是保存在<strong>key/source/_posts</strong>这个文件夹下面的。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/61.png" alt="img"></p>
+<p>我们可以修改文件的标题，不影响显示的结果。</p>
+<p>出于一个好的习惯，我推荐你创建<strong>相关的目录</strong>（如上图的2021/7/)来保存对应的文本。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/62.png" alt="img"></p>
+<p>我们选择更新文件来发布内容。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/63.png" alt="img"></p>
+<p>如果想添加标题，只需要加上一行 <strong>title: 标题</strong> 即可。</p>
+<p>模式如下所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/64.png" alt="img"></p>
+<p>我们再来创建一篇看看。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/65.png" alt="img"></p>
+<p>我们来看一下，第一行和第六行是相关的符号。</p>
+<p>title：标题</p>
+<p>data：时间</p>
+<p>tags：标签</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/31/66.png" alt="img"></p>
+<p>你也可以添加更多的内容，在后面会讲解的。</p>
+<p>本文暂时到这里，后续再更新其他的操作。</p>
+<p>目前的本文测试小站：<a target="_blank" rel="noopener" href="https://keyxec.github.io/key/">https://keyxec.github.io/key/</a></p>
+
+    </div>
+    <div>
+    
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+    
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>先圣
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://btcjjj.com/2021/07/31/2021-07-31-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Matataki%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%B0%B8%E4%B9%85%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%EF%BC%9F/" title="如何利用Matataki和Github搭建个人博客，永久保存数据？">http://btcjjj.com/2021/07/31/2021-07-31-如何利用Matataki和Github搭建个人博客，永久保存数据？/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/" rel="tag"># 内容创作</a>
+              <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="tag"># 博客搭建</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/07/29/2021-07-29-%E8%AE%B0%E5%BD%95%E6%96%87%E5%AD%97%E5%88%9B%E4%BD%9C%E4%BA%A7%E5%93%81/" rel="prev" title="记录文字创作产品">
+      <i class="fa fa-chevron-left"></i> 记录文字创作产品
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/08/01/2021-08-01-Github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E7%AF%872%EF%BC%9A%E5%88%A9%E7%94%A8jsdelivr%E5%81%9A%E5%9B%BE%E5%BA%8A%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E3%80%82/" rel="next" title="Github博客开发篇2：利用jsdelivr做图床分享链接。">
+      Github博客开发篇2：利用jsdelivr做图床分享链接。 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1363948882&auto=1&height=66"></iframe>
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1%EF%BC%9A%E7%9B%AE%E6%A0%87"><span class="nav-number">1.</span> <span class="nav-text">1：目标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2%EF%BC%9A%E5%9F%BA%E7%A1%80"><span class="nav-number">2.</span> <span class="nav-text">2：基础</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3%EF%BC%9A%E5%BC%80%E5%A7%8B"><span class="nav-number">3.</span> <span class="nav-text">3：开始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%B8%80%E4%B8%AAgithubi%E8%B4%A6%E5%8F%B7%EF%BC%9A"><span class="nav-number">3.1.</span> <span class="nav-text">1：我们需要一个githubi账号：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%B8%80%E4%B8%AAmatataki%E8%B4%A6%E5%8F%B7%EF%BC%9A"><span class="nav-number">3.2.</span> <span class="nav-text">2：我们需要一个matataki账号：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%AD%98%E5%82%A8%E5%9C%A8GitHub%E7%8B%AC%E7%AB%8B%E5%AD%90%E7%AB%99%E7%9A%84%E6%96%87%E7%AB%A0"><span class="nav-number">3.3.</span> <span class="nav-text">3：发布第一篇存储在GitHub独立子站的文章</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4%EF%BC%9A%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">4：进阶教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%BF%AE%E6%94%B9%E7%95%8C%E9%9D%A2%EF%BC%9F"><span class="nav-number">4.1.</span> <span class="nav-text">1：如果修改界面？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A4%B4%E5%83%8F"><span class="nav-number">4.1.1.</span> <span class="nav-text">自定义头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%8A%B6%E6%80%81%E6%A0%8F"><span class="nav-number">4.1.2.</span> <span class="nav-text">自定义状态栏</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%EF%BC%9A%E5%9C%A8GitHub%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9%E3%80%82"><span class="nav-number">4.2.</span> <span class="nav-text">2：在GitHub直接发布文章内容。</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="先圣"
+      src="https://gateway.pinata.cloud/ipfs/QmbRRdkY81kDFFYgSYdJV9h99KU8mP7bQUMQuY5HB65eV8">
+  <p class="site-author-name" itemprop="name">先圣</p>
+  <div class="site-description" itemprop="description">天不负，苦心人</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tsl1997" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tsl1997" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:btcabc@163.com" title="E-Mail → mailto:btcabc@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/btc999xs" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;btc999xs" rel="noopener" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/7502988975" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7502988975" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">先圣</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
