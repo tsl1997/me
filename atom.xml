@@ -6,7 +6,7 @@
   <link href="http://btcjjj.com/atom.xml" rel="self"/>
   
   <link href="http://btcjjj.com/"/>
-  <updated>2021-12-06T12:41:09.508Z</updated>
+  <updated>2021-12-09T06:02:01.612Z</updated>
   <id>http://btcjjj.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算力和价格存在关系吗？SHA-256研究</title>
+    <link href="http://btcjjj.com/2021/12/04/2021-12-04-%E7%AE%97%E5%8A%9B%E5%92%8C%E4%BB%B7%E6%A0%BC%E5%AD%98%E5%9C%A8%E5%85%B3%E7%B3%BB%E5%90%97%EF%BC%9FSHA-256%E7%A0%94%E7%A9%B6/"/>
+    <id>http://btcjjj.com/2021/12/04/2021-12-04-%E7%AE%97%E5%8A%9B%E5%92%8C%E4%BB%B7%E6%A0%BC%E5%AD%98%E5%9C%A8%E5%85%B3%E7%B3%BB%E5%90%97%EF%BC%9FSHA-256%E7%A0%94%E7%A9%B6/</id>
+    <published>2021-12-04T14:50:00.000Z</published>
+    <updated>2021-12-09T06:02:01.612Z</updated>
+    
+    <content type="html"><![CDATA[<p>我想要知道算力和价格存在关系吗？如何存在联系关系，是否和报价有一定的差别，即某些代币高估了，某些代币低估了价值？我希望从中寻找到我需要的答案。</p><p>本文为非正式研究。</p><p>以BTC作为标准，我也只能以他为标准了，毕竟是区块链始祖！</p><p>本文数据来自：<a href="https://miningpoolstats.stream/">https://miningpoolstats.stream/</a></p><p>本文时间：2021年12月4日22:16:10</p><p><img src="https://cdn.nlark.com/yuque/0/2021/png/2754491/1638627415028-9362c989-4a73-43b1-83b4-61fb8ea2ab92.png" alt="img"></p><p>几乎所有的代币都是波动的，价格浮动也比较大，我们姑且忽略这一点。</p><p>BTC 900B 175EH/s</p><p>BCH 8.6B 1.23EH/s</p><p>假设以BTC为标准，那么可以得出的结论为：</p><p><strong>BTC每1EH/s的算力对应的市值约为：</strong></p><p><strong>900/175=5.14 B（十亿美元）</strong></p><p>那么BCH的市值应该是：</p><p>5.14*1.23=6.32 B</p><p>可实际上上图的市值是8.58 B 与估算的价格多了约35%，这是一个可以接受的高估范围。</p><p>那我们继续往下看，下一个是BSV，在此之前我们需要换算一下<strong>BTC的1PH/S的算力对应市值：</strong></p><p><strong>5.14 B/1000=5.14 M（百万美元）</strong></p><p>那么，BSV的对应市值应该为：</p><p>5.14*83=427 M =0.427 B</p><p>实际上BSV的市值为2.31B，与估算价格不符，溢价了5多倍，明显高估。</p><p>我们来看看XEC的对应市值：</p><p>5.14*272=1398 M =1.398 B</p><p>实际上XEC的市值为2.27B，比估算价格多了62%，这勉强也能够接受。</p><p>如果以BCH作为参考的话，那么就完全可以接受了。</p><p>8.58B/1.23E=6.98 B</p><p>6.98B*0.272E=1.90 B</p><p>1.90和2.27的波动是可以忽略的，约为20%。</p><p>如果是用BSV作为标准，那么XEC的市值是严重被低估的，但是BSV是不可能成为标准的。</p><p>因为澳本聪不是中本聪。</p><p>最后我们来看一下DGB，这也是一个老币了：</p><p>5.14*36=185 M</p><p>可实际上DGB的市值是554 M，也明显有3倍了，这是高估的情况。</p><p>有人要说DGB是一个多种挖矿的币，不止有SHA-256，还有其他的方式，但是如果可以赚钱的话，什么方式都一样。</p><p>为什么我要放弃下图这些币种呢？</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/JPG@main/img/1638629486338-d9cf5263-50f0-4f3a-8969-0d22cea83e1a.png" alt="img"></p><p>因为他们是挖BTC附带的币种，你只要挖BTC，就可以额外的获取他们了。</p><p>所以，他们是否存在价值，我依旧保存怀疑。</p><p>虽然有成功的案例，如狗狗币原来是借助莱特币网络存活的。但是狗狗币的崛起并不是因为他背靠莱特，而是因为MEME文化。</p>]]></content>
+    
+    
+    <summary type="html">我想要知道算力和价格存在关系吗？如何存在联系关系，是否和报价有一定的差别，即某些代币高估了，某些代币低估了价值？我希望从中寻找到我需要的答案。</summary>
+    
+    
+    
+    <category term="加密货币" scheme="http://btcjjj.com/categories/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/"/>
+    
+    
+    <category term="POW" scheme="http://btcjjj.com/tags/POW/"/>
+    
+  </entry>
   
   <entry>
     <title>书籍就是商品-吴鸿</title>
