@@ -2317,8 +2317,50 @@
       </tags>
   </entry>
   <entry>
+    <title>一键RSS订阅mirror文章</title>
+    <url>/2022/01/07/2022-01-07-%E4%B8%80%E9%94%AERSS%E8%AE%A2%E9%98%85mirror%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h3 id="1：为什么要写RSS？"><a href="#1：为什么要写RSS？" class="headerlink" title="1：为什么要写RSS？"></a>1：为什么要写RSS？</h3><p>因为我在某个微博看到一个有意思的东西，需要用到他。</p>
+<h3 id="2：什么是RSS？"><a href="#2：什么是RSS？" class="headerlink" title="2：什么是RSS？"></a>2：什么是RSS？</h3><p>这是一个订阅的服务，你只会阅读到你订阅的内容（不会推送广告），他可以来自互联网的任何地方。</p>
+<h3 id="3：如何使用RSS？"><a href="#3：如何使用RSS？" class="headerlink" title="3：如何使用RSS？"></a>3：如何使用RSS？</h3><p>我是第一次接触到他的，所以我去搜索了一下，感觉知乎的回答不错。</p>
+<p><a href="https://www.zhihu.com/question/19580096">https://www.zhihu.com/question/19580096</a></p>
+<p>当然，我也去B站搜索了一下，感觉也还不错。</p>
+<p><a href="https://www.bilibili.com/video/BV17E411L78o?from=search&seid=1090414143571088325&spm_id_from=333.337.0.0">https://www.bilibili.com/video/BV17E411L78o?from=search&amp;seid=1090414143571088325&amp;spm_id_from=333.337.0.0</a></p>
+<p>看完了上面的两个，我准备开始动手试一下。</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>我准备直接用安卓手机做实验，为什么不使用PC端呢？</p>
+<p>毕竟我觉得没有电脑可以活，没有手机是不行的。</p>
+<p>我选择了一个国产的产品，毕竟要中文才好用。</p>
+<h4 id="3-1：下载安装"><a href="#3-1：下载安装" class="headerlink" title="3.1：下载安装"></a>3.1：下载安装</h4><p>链接:<a href="https://share.weiyun.com/DcLQoDZX">https://share.weiyun.com/DcLQoDZX</a></p>
+<p>github：<a href="https://github.com/ihewro/Focus">https://github.com/ihewro/Focus</a></p>
+<p>SC：<a href="https://siasky.net/AABug7hnLY8wWIF0txyzggxivwhkv1o97FYLXSCBYzsSqQ">https://siasky.net/AABug7hnLY8wWIF0txyzggxivwhkv1o97FYLXSCBYzsSqQ</a></p>
+<p>百度提取码xsxs：<a href="https://pan.baidu.com/s/1MuDwJPePxzvkWHgolpKxNA">https://pan.baidu.com/s/1MuDwJPePxzvkWHgolpKxNA</a></p>
+<h4 id="3-2：新建订阅（左上角展开）"><a href="#3-2：新建订阅（左上角展开）" class="headerlink" title="3.2：新建订阅（左上角展开）"></a>3.2：新建订阅（左上角展开）</h4><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1641555001840-5831034f-6842-48b1-a335-3e0b69e38057.png" alt="img"></p>
+<h4 id="3-3：订阅管理，手动添加"><a href="#3-3：订阅管理，手动添加" class="headerlink" title="3.3：订阅管理，手动添加"></a>3.3：订阅管理，手动添加</h4><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1641555106252-5616602b-07a8-4371-ae82-396041fbd960.png" alt="img"></p>
+<h4 id="3-4：输入RSS订阅地址"><a href="#3-4：输入RSS订阅地址" class="headerlink" title="3.4：输入RSS订阅地址"></a>3.4：输入RSS订阅地址</h4><p>测试地址：<a href="https://submirror.xyz/0x6666660A200fB497AA26440998ae7567124FbbF0">https://submirror.xyz/0x6666660A200fB497AA26440998ae7567124FbbF0</a></p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1641555232034-2ec8502a-cf71-4ba3-90dc-31d0b7c35cc8.png" alt="img"></p>
+<h4 id="3-5：自定义订阅名称（上图）文件夹"><a href="#3-5：自定义订阅名称（上图）文件夹" class="headerlink" title="3.5：自定义订阅名称（上图）文件夹"></a>3.5：自定义订阅名称（上图）文件夹</h4><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1641555332773-e59f6ab1-ad94-4ed3-b9ea-25bfe7500f05.png" alt="img"></p>
+<h4 id="3-6：订阅后，下滑刷新"><a href="#3-6：订阅后，下滑刷新" class="headerlink" title="3.6：订阅后，下滑刷新"></a>3.6：订阅后，下滑刷新</h4><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1641555419506-54cbf51a-7baa-4b61-be98-ee56b5c5f1ae.png" alt="img"></p>
+<h4 id="3-7：添加其他的订阅"><a href="#3-7：添加其他的订阅" class="headerlink" title="3.7：添加其他的订阅"></a>3.7：添加其他的订阅</h4><p>方法：这里感谢推特老铁<a href="https://twitter.com/wonderfuly?s=21">@wonderfuly</a></p>
+<p>传播：也要感谢微博老铁<a href="https://weibo.com/u/5983289142">@侠客张_DeFi</a></p>
+<p>使用小窍门：</p>
+<p>1：获取某人的地址，如：<a href="%5Bhttps://mirror.xyz/%5D(https://mirror.xyz/0)cryptolich.eth"><a href="https://mirror.xyz/0">mirror.xyz/</a>cryptolich.eth</a></p>
+<p>2：在前面加上sub，例如：<a href="%5Bhttps://submirror.xyz/%5D(https://mirror.xyz/0)cryptolich.eth">sub<a href="https://mirror.xyz/0">mirror.xyz/</a>cryptolich.eth</a></p>
+<p>3：将步骤2获得的RSS地址加入你的订阅即可。</p>
+<p>如果你不知道关注谁，可以在这里搜索mirror文章：</p>
+<p><a href="https://askmirror.xyz/">镜子搜索</a></p>
+<p>最后，如果你觉得本文对你有帮助的话，欢迎订阅本站。</p>
+<p>先圣博客：</p>
+<p><a href="https://btcjjj.com/atom.xml">https://btcjjj.com/atom.xml</a></p>
+]]></content>
+      <categories>
+        <category>RSS</category>
+      </categories>
+      <tags>
+        <tag>RSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Github福利，OSSDAO空投</title>
-    <url>/2022/01/04/20222-01-04-github%E7%A6%8F%E5%88%A9%EF%BC%8C%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96OSSDAO/</url>
+    <url>/2022/01/04/2022-01-04-github%E7%A6%8F%E5%88%A9%EF%BC%8C%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96OSSDAO/</url>
     <content><![CDATA[<p>我觉得这很有可能只是一个骗局，但是这的确给我们了一个启发。</p>
 <p>没事就要多尝试一下，万一就有痕迹了呢。</p>
 <p>毕竟所有的DAO都是根据公开的数据来进行的空投，说不定下一个就是你。</p>
