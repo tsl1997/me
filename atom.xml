@@ -6,7 +6,7 @@
   <link href="http://btcjjj.com/atom.xml" rel="self"/>
   
   <link href="http://btcjjj.com/"/>
-  <updated>2022-01-11T09:25:34.806Z</updated>
+  <updated>2022-01-12T13:01:15.272Z</updated>
   <id>http://btcjjj.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Looksrare给opensea用户空投looks代币</title>
+    <link href="http://btcjjj.com/2022/01/12/2022-01-12-LOOKS%E7%A9%BA%E6%8A%95/"/>
+    <id>http://btcjjj.com/2022/01/12/2022-01-12-LOOKS%E7%A9%BA%E6%8A%95/</id>
+    <published>2022-01-12T13:20:00.000Z</published>
+    <updated>2022-01-12T13:01:15.272Z</updated>
+    
+    <content type="html"><![CDATA[<p>网站：<a href="https://looksrare.org/zh_hans">https://looksrare.org/zh_hans</a></p><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1641810082508-c1e14ac1-d132-4403-9e41-10510c914023.png" alt="img"></p><p>上架一个NFT后（授权几十刀）</p><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1641810718396-ec3d2d47-5313-4f3b-a4ff-d9572826a048.png" alt="img"></p><p>点击领取代币（找一个gas费便宜的时候领取）。</p><p>最后去uniswap或者其他的cex交易（省手续费）都可以。</p><p>就酱，再见。</p>]]></content>
+    
+    
+    <summary type="html">looks空投：在2021年6-12月交易3ETH以上opensea用户。</summary>
+    
+    
+    
+    <category term="空投" scheme="http://btcjjj.com/categories/%E7%A9%BA%E6%8A%95/"/>
+    
+    
+    <category term="空投" scheme="http://btcjjj.com/tags/%E7%A9%BA%E6%8A%95/"/>
+    
+  </entry>
   
   <entry>
     <title>断开没用小狐狸的授权</title>
@@ -434,29 +455,6 @@
     <category term="内容创作" scheme="http://btcjjj.com/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/"/>
     
     <category term="博客搭建" scheme="http://btcjjj.com/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>记录文字创作产品</title>
-    <link href="http://btcjjj.com/2021/07/29/2021-07-29-%E8%AE%B0%E5%BD%95%E6%96%87%E5%AD%97%E5%88%9B%E4%BD%9C%E4%BA%A7%E5%93%81/"/>
-    <id>http://btcjjj.com/2021/07/29/2021-07-29-%E8%AE%B0%E5%BD%95%E6%96%87%E5%AD%97%E5%88%9B%E4%BD%9C%E4%BA%A7%E5%93%81/</id>
-    <published>2021-07-29T11:00:00.000Z</published>
-    <updated>2021-12-06T12:53:04.005Z</updated>
-    
-    <content type="html"><![CDATA[<p>我们使用过很多的产品来写入文字。</p><h1 id="1：Word文档"><a href="#1：Word文档" class="headerlink" title="1：Word文档"></a>1：Word文档</h1><p>这款是微软自带的四款常用软件之一，所以非常普及。</p><p>功能强大，几乎可以做到这种事情。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/29/1.png" alt="img"></p><p>但是因为太复杂的界面，反而有些让人不适应。</p><p>我们应该不需要这么多的功能。</p><p>你可以插入各种数据，表格，图片，甚至是视频。</p><p>保存的文件一般为.doc或者.docx。</p><h1 id="2：记事本"><a href="#2：记事本" class="headerlink" title="2：记事本"></a>2：记事本</h1><p>这款也是微软自带的东西，而且应用的范围更加广大。</p><p>在多种终端都可以查看该文件，一般后缀名为.txt。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/29/2.png" alt="img"></p><p>虽然这款记录产品，常见，易用，普及，但是功能缺少，甚至连超链接都不支持。</p><h1 id="3：石墨文档"><a href="#3：石墨文档" class="headerlink" title="3：石墨文档"></a>3：石墨文档</h1><p>使用这款软件的初衷是因为，我有次没有保存文档，结果全部丢失了。</p><p>后来花了很长时间，也没有完全复原内容。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/29/3.png" alt="img"></p><p>他的功能比记事本要多，比Word文档要少，但是却有一个核心的功能，自动保存。</p><p>因为每输入一句话都会自动保存，所以还是非常好用的。</p><p>里面插入的图片会因为防盗而在某些时候失效，所以不是最佳的选择。</p><p>（PS：某宝上这产品的会员貌似很便宜）</p><h1 id="4：语雀"><a href="#4：语雀" class="headerlink" title="4：语雀"></a>4：语雀</h1><p>这是一款云端的知识库，来自蚂蚁集团的产品。</p><p>他提供网页端，桌面端，小程序等多端操作。</p><p>他的好处是可以创建一些体系，而且支持多种文档：</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/29/4.png" alt="img"></p><p>我们来说下思维图吧，因为平时这种服务都是专业的软件。</p><p>比如说，这款processon：</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/29/5.png" alt="img"></p><p>我们可以创建思维图在语雀里面，并且管理多种文档。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/29/6.png" alt="img"></p><h1 id="5：Markdown"><a href="#5：Markdown" class="headerlink" title="5：Markdown"></a>5：Markdown</h1><p>Markdown是一种轻量级标记语言。</p><p>我使用一款支持他的产品Typora。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/7/29/7.png" alt="img"></p><p>我印象最深刻的是，他不保管图片这种数据，是让你插入外链。</p><p>以这种方式显示：</p><p>![](图片外链）</p><p>所以保存的文档不会因为插入图片而 过大，但是也造成了另外一个问题，如果保管图片？</p><p>一般情况下，文件的后缀为.md。</p><p>最后，无论是用什么创作内容，都记得要保护好。</p>]]></content>
-    
-    
-    <summary type="html">产品体验</summary>
-    
-    
-    
-    <category term="内容平台" scheme="http://btcjjj.com/categories/%E5%86%85%E5%AE%B9%E5%B9%B3%E5%8F%B0/"/>
-    
-    
-    <category term="内容创作" scheme="http://btcjjj.com/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/"/>
-    
-    <category term="产品分析" scheme="http://btcjjj.com/tags/%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
