@@ -2491,4 +2491,32 @@
         <tag>空投</tag>
       </tags>
   </entry>
+  <entry>
+    <title>第一次购买VPS搭建梯子</title>
+    <url>/2022/01/14/2022-01-14-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0VPS%E6%90%AD%E5%BB%BA%E6%A2%AF%E5%AD%90/</url>
+    <content><![CDATA[<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>本篇为记录，不作为推广使用。</p>
+<p>原因当然是我换了N次的机场又要到期，我一琢磨，干脆自己搭建一个便宜还安全。</p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642084649959-6114618c-0b50-41d9-956e-cf5356b4da36.png" alt="img"></p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="1：购买VPS（请自行选择）"><a href="#1：购买VPS（请自行选择）" class="headerlink" title="1：购买VPS（请自行选择）"></a>1：购买VPS（请自行选择）</h3><p>刚好我看到某个博主推荐，5元一个月，我去，这么良心？？？</p>
+<p><a href="https://iweec.com/64.html">https://iweec.com/64.html</a></p>
+<p>费了30分钟，购买了，然后下载了SSH，并且连接上去了。</p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642086326819-47cbd28d-a472-4977-9872-30a4f3ca91d3.png" alt="img"></p>
+<h3 id="2：连接SSH安装面板"><a href="#2：连接SSH安装面板" class="headerlink" title="2：连接SSH安装面板"></a>2：连接SSH安装面板</h3><p>按照人家的教程，一会儿就弄完了，然后打卡所有的端口。</p>
+<p>安装教程：<a href="https://iweec.com/5.html">https://iweec.com/5.html</a></p>
+<p>尝试登录后台：</p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642086660589-1e24bab3-c0fe-4a85-9cf8-708c1a64b519.png" alt="img"></p>
+<h3 id="3：测试网速"><a href="#3：测试网速" class="headerlink" title="3：测试网速"></a>3：测试网速</h3><p>然后又经过了几十分钟的测试，还行吧。</p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642088530146-d32c1785-b218-4d28-8e79-a992e444c7ea.png" alt="img"></p>
+<p>晚上还有这个网速，个人的话，完全OK。</p>
+<p>但是，一些问题的确没有得到解决，比如某些时候太慢了。</p>
+<p>愉快玩耍，再见。</p>
+<p>（最后强调，本文不是推广，也不建议去买，买了出问题也别找我，我自己的这个都不知道咋调）</p>
+]]></content>
+      <categories>
+        <category>VPS</category>
+      </categories>
+      <tags>
+        <tag>VPS</tag>
+      </tags>
+  </entry>
 </search>
