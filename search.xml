@@ -2519,4 +2519,109 @@
         <tag>VPS</tag>
       </tags>
   </entry>
+  <entry>
+    <title>自由的写作，自由的内容</title>
+    <url>/2022/01/16/2022-01-16-%E8%87%AA%E7%94%B1%E7%9A%84%E5%86%99%E4%BD%9C%EF%BC%8C%E8%87%AA%E7%94%B1%E7%9A%84%E5%86%85%E5%AE%B9/</url>
+    <content><![CDATA[<h3 id="前言——有些事情不应该被忘记："><a href="#前言——有些事情不应该被忘记：" class="headerlink" title="前言——有些事情不应该被忘记："></a>前言——有些事情不应该被忘记：</h3><ul>
+<li><p>我的某篇文章在某个网站被删除，理由是根据相关规则第123条……</p>
+</li>
+<li><p>微博删除大量“币圈kol”的账号</p>
+</li>
+<li><p>推特封杀了前美国总统特朗普的账号</p>
+</li>
+</ul>
+<h2 id="内容平台："><a href="#内容平台：" class="headerlink" title="内容平台："></a>内容平台：</h2><h3 id="去中心化内容平台mirror："><a href="#去中心化内容平台mirror：" class="headerlink" title="去中心化内容平台mirror："></a>去中心化内容平台mirror：</h3><p>mirrror是一个币圈的内容平台，但是他却有希望出圈，因为他真的可以做到抗审查。</p>
+<p>你可以查看这篇文章：<a href="%5Bhttps://btcjjj.com/2021/10/20/2021-10-20-Mirror%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%86%85%E5%AE%B9%E5%B9%B3%E5%8F%B0/%5D(https://btcjjj.com/2021/10/20/2021-10-20-Mirror%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%86%85%E5%AE%B9%E5%B9%B3%E5%8F%B0/)">Mirror去中心化的内容平台</a></p>
+<h4 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h4><ul>
+<li><p>任何人都可以架设一个网关，把他的内容串联起来，如果他被墙的话</p>
+</li>
+<li><p>他将内容上传到了AR区块链，这是一个永久网络</p>
+</li>
+<li></li>
+</ul>
+<h4 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<li>他只会把文字发送到AR，并不会帮你保存图片，所有的图片都是外链</li>
+</ul>
+<p>众所周知，外链是最方便的图片方案，但是却是最容易出现问题的地方。</p>
+<h3 id="IPFS去中心化平台matataki："><a href="#IPFS去中心化平台matataki：" class="headerlink" title="IPFS去中心化平台matataki："></a>IPFS去中心化平台matataki：</h3><p><a href="https://www.matataki.io/">https://www.matataki.io/</a></p>
+<h4 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h4><ul>
+<li>便于访问，容易操作</li>
+<li>保存在IPFS网络，理论上长期保存</li>
+</ul>
+<h4 id="缺点：-1"><a href="#缺点：-1" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<li>图片依旧是外链</li>
+</ul>
+<h3 id="matataki-github方案："><a href="#matataki-github方案：" class="headerlink" title="matataki+github方案："></a>matataki+github方案：</h3><p>文字版出了点问题，尽量看视频版内容。</p>
+<p><a href="https://space.bilibili.com/109884675/channel/seriesdetail?sid=1886294">利用matata搭建个人子站</a></p>
+<h4 id="优点：-2"><a href="#优点：-2" class="headerlink" title="优点："></a>优点：</h4><ul>
+<li>数据托管在github这个全球最大开源库</li>
+</ul>
+<h4 id="缺点：-2"><a href="#缺点：-2" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<li>github有可能会被墙，造成无法访问子站</li>
+<li>致命缺点：hexo代码兼容问题，无法更新独立子站</li>
+</ul>
+<h3 id="图片外链的解决方案："><a href="#图片外链的解决方案：" class="headerlink" title="图片外链的解决方案："></a>图片外链的解决方案：</h3><h4 id="github-jsdelivr："><a href="#github-jsdelivr：" class="headerlink" title="github+jsdelivr："></a>github+jsdelivr：</h4><h4 id="优点：-3"><a href="#优点：-3" class="headerlink" title="优点："></a>优点：</h4><ul>
+<li>图片数据在github仓库</li>
+<li>图片访问由jsdelivr提供cdn加速</li>
+</ul>
+<h4 id="缺点：-3"><a href="#缺点：-3" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<li>jsdelivr的加速有限，而且流量大会崩溃</li>
+<li>上传图片到github需要打开梯子</li>
+</ul>
+<h4 id="阿里云-腾讯云OSS："><a href="#阿里云-腾讯云OSS：" class="headerlink" title="阿里云/腾讯云OSS："></a>阿里云/腾讯云OSS：</h4><h4 id="优点：-4"><a href="#优点：-4" class="headerlink" title="优点："></a>优点：</h4><ul>
+<li>网速无限快，内存几乎无限</li>
+</ul>
+<h4 id="缺点：-4"><a href="#缺点：-4" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<li>费钱（存储和流量都要钱）</li>
+</ul>
+<p>建议开启防盗链，防止被盗图产生的非正常流量费。</p>
+<p>强烈安利Typora+PicGo搭配使用（github，阿里云均可）。</p>
+<h3 id="传统hexo-github博客（现行方案）："><a href="#传统hexo-github博客（现行方案）：" class="headerlink" title="传统hexo+github博客（现行方案）："></a>传统hexo+github博客（现行方案）：</h3><h4 id="优点：-5"><a href="#优点：-5" class="headerlink" title="优点："></a>优点：</h4><ul>
+<li>完整的结构，不易出错</li>
+<li>在本地写好内容和调试，一次性上传更新到博客</li>
+</ul>
+<h4 id="缺点：-5"><a href="#缺点：-5" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<li>需要解决图片外链问题</li>
+<li>需要自己动手配置，较为麻烦</li>
+</ul>
+<h4 id="搭建教程（网上）："><a href="#搭建教程（网上）：" class="headerlink" title="搭建教程（网上）："></a>搭建教程（网上）：</h4><p><a href="https://www.cnblogs.com/huanhao/p/hexobase.html">【基础篇】hexo博客搭建教程</a></p>
+<p><a href="https://blog.csdn.net/nightmare_dimple/article/details/86661502">Hexo博客优化之Next主题美化</a></p>
+<p><a href="http://theme-next.iissnan.com/">Next使用文档</a></p>
+<p>综合上面的三个看一下应该就够用了。</p>
+<p>示范网站：<a href="https://btcjjj.com/">先圣博客</a></p>
+<h2 id="创作工具："><a href="#创作工具：" class="headerlink" title="创作工具："></a>创作工具：</h2><h3 id="石墨文档："><a href="#石墨文档：" class="headerlink" title="石墨文档："></a>石墨文档：</h3><h4 id="优点：-6"><a href="#优点：-6" class="headerlink" title="优点："></a>优点：</h4><ul>
+<li><p>随时保存内容</p>
+</li>
+<li><p>版本控制系统</p>
+</li>
+<li><p>小型多人合作免费</p>
+</li>
+</ul>
+<h4 id="缺点：-6"><a href="#缺点：-6" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<li>图片有防盗链，难以复制到其他平台</li>
+</ul>
+<h3 id="Typora："><a href="#Typora：" class="headerlink" title="Typora："></a>Typora：</h3><h4 id="优点：-7"><a href="#优点：-7" class="headerlink" title="优点："></a>优点：</h4><ul>
+<li>最好用的Markdown编辑器，所见即所得</li>
+<li>支持多工具上传图片，如PicGo</li>
+</ul>
+<h4 id="缺点：-7"><a href="#缺点：-7" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<li>无网络备份</li>
+<li>现在需要付费</li>
+</ul>
+<h3 id="语雀："><a href="#语雀：" class="headerlink" title="语雀："></a>语雀：</h3><h4 id="优点：-8"><a href="#优点：-8" class="headerlink" title="优点："></a>优点：</h4><ul>
+<li>支持多种格式的内容导入，包括Markdown</li>
+<li>支持多种类型的内容创造，如思维导图</li>
+</ul>
+<h4 id="缺点：-8"><a href="#缺点：-8" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<li>公开文章可以被举报删除</li>
+<li>图片开启防盗链，难以分享</li>
+</ul>
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>写作</tag>
+      </tags>
+  </entry>
 </search>

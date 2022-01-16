@@ -6,7 +6,7 @@
   <link href="http://btcjjj.com/atom.xml" rel="self"/>
   
   <link href="http://btcjjj.com/"/>
-  <updated>2022-01-14T06:02:17.222Z</updated>
+  <updated>2022-01-16T14:29:39.430Z</updated>
   <id>http://btcjjj.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自由的写作，自由的内容</title>
+    <link href="http://btcjjj.com/2022/01/16/2022-01-16-%E8%87%AA%E7%94%B1%E7%9A%84%E5%86%99%E4%BD%9C%EF%BC%8C%E8%87%AA%E7%94%B1%E7%9A%84%E5%86%85%E5%AE%B9/"/>
+    <id>http://btcjjj.com/2022/01/16/2022-01-16-%E8%87%AA%E7%94%B1%E7%9A%84%E5%86%99%E4%BD%9C%EF%BC%8C%E8%87%AA%E7%94%B1%E7%9A%84%E5%86%85%E5%AE%B9/</id>
+    <published>2022-01-16T14:00:00.000Z</published>
+    <updated>2022-01-16T14:29:39.430Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言——有些事情不应该被忘记："><a href="#前言——有些事情不应该被忘记：" class="headerlink" title="前言——有些事情不应该被忘记："></a>前言——有些事情不应该被忘记：</h3><ul><li><p>我的某篇文章在某个网站被删除，理由是根据相关规则第123条……</p></li><li><p>微博删除大量“币圈kol”的账号</p></li><li><p>推特封杀了前美国总统特朗普的账号</p></li></ul><h2 id="内容平台："><a href="#内容平台：" class="headerlink" title="内容平台："></a>内容平台：</h2><h3 id="去中心化内容平台mirror："><a href="#去中心化内容平台mirror：" class="headerlink" title="去中心化内容平台mirror："></a>去中心化内容平台mirror：</h3><p>mirrror是一个币圈的内容平台，但是他却有希望出圈，因为他真的可以做到抗审查。</p><p>你可以查看这篇文章：<a href="%5Bhttps://btcjjj.com/2021/10/20/2021-10-20-Mirror%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%86%85%E5%AE%B9%E5%B9%B3%E5%8F%B0/%5D(https://btcjjj.com/2021/10/20/2021-10-20-Mirror%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%86%85%E5%AE%B9%E5%B9%B3%E5%8F%B0/)">Mirror去中心化的内容平台</a></p><h4 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h4><ul><li><p>任何人都可以架设一个网关，把他的内容串联起来，如果他被墙的话</p></li><li><p>他将内容上传到了AR区块链，这是一个永久网络</p></li><li></li></ul><h4 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h4><ul><li>他只会把文字发送到AR，并不会帮你保存图片，所有的图片都是外链</li></ul><p>众所周知，外链是最方便的图片方案，但是却是最容易出现问题的地方。</p><h3 id="IPFS去中心化平台matataki："><a href="#IPFS去中心化平台matataki：" class="headerlink" title="IPFS去中心化平台matataki："></a>IPFS去中心化平台matataki：</h3><p><a href="https://www.matataki.io/">https://www.matataki.io/</a></p><h4 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h4><ul><li>便于访问，容易操作</li><li>保存在IPFS网络，理论上长期保存</li></ul><h4 id="缺点：-1"><a href="#缺点：-1" class="headerlink" title="缺点："></a>缺点：</h4><ul><li>图片依旧是外链</li></ul><h3 id="matataki-github方案："><a href="#matataki-github方案：" class="headerlink" title="matataki+github方案："></a>matataki+github方案：</h3><p>文字版出了点问题，尽量看视频版内容。</p><p><a href="https://space.bilibili.com/109884675/channel/seriesdetail?sid=1886294">利用matata搭建个人子站</a></p><h4 id="优点：-2"><a href="#优点：-2" class="headerlink" title="优点："></a>优点：</h4><ul><li>数据托管在github这个全球最大开源库</li></ul><h4 id="缺点：-2"><a href="#缺点：-2" class="headerlink" title="缺点："></a>缺点：</h4><ul><li>github有可能会被墙，造成无法访问子站</li><li>致命缺点：hexo代码兼容问题，无法更新独立子站</li></ul><h3 id="图片外链的解决方案："><a href="#图片外链的解决方案：" class="headerlink" title="图片外链的解决方案："></a>图片外链的解决方案：</h3><h4 id="github-jsdelivr："><a href="#github-jsdelivr：" class="headerlink" title="github+jsdelivr："></a>github+jsdelivr：</h4><h4 id="优点：-3"><a href="#优点：-3" class="headerlink" title="优点："></a>优点：</h4><ul><li>图片数据在github仓库</li><li>图片访问由jsdelivr提供cdn加速</li></ul><h4 id="缺点：-3"><a href="#缺点：-3" class="headerlink" title="缺点："></a>缺点：</h4><ul><li>jsdelivr的加速有限，而且流量大会崩溃</li><li>上传图片到github需要打开梯子</li></ul><h4 id="阿里云-腾讯云OSS："><a href="#阿里云-腾讯云OSS：" class="headerlink" title="阿里云/腾讯云OSS："></a>阿里云/腾讯云OSS：</h4><h4 id="优点：-4"><a href="#优点：-4" class="headerlink" title="优点："></a>优点：</h4><ul><li>网速无限快，内存几乎无限</li></ul><h4 id="缺点：-4"><a href="#缺点：-4" class="headerlink" title="缺点："></a>缺点：</h4><ul><li>费钱（存储和流量都要钱）</li></ul><p>建议开启防盗链，防止被盗图产生的非正常流量费。</p><p>强烈安利Typora+PicGo搭配使用（github，阿里云均可）。</p><h3 id="传统hexo-github博客（现行方案）："><a href="#传统hexo-github博客（现行方案）：" class="headerlink" title="传统hexo+github博客（现行方案）："></a>传统hexo+github博客（现行方案）：</h3><h4 id="优点：-5"><a href="#优点：-5" class="headerlink" title="优点："></a>优点：</h4><ul><li>完整的结构，不易出错</li><li>在本地写好内容和调试，一次性上传更新到博客</li></ul><h4 id="缺点：-5"><a href="#缺点：-5" class="headerlink" title="缺点："></a>缺点：</h4><ul><li>需要解决图片外链问题</li><li>需要自己动手配置，较为麻烦</li></ul><h4 id="搭建教程（网上）："><a href="#搭建教程（网上）：" class="headerlink" title="搭建教程（网上）："></a>搭建教程（网上）：</h4><p><a href="https://www.cnblogs.com/huanhao/p/hexobase.html">【基础篇】hexo博客搭建教程</a></p><p><a href="https://blog.csdn.net/nightmare_dimple/article/details/86661502">Hexo博客优化之Next主题美化</a></p><p><a href="http://theme-next.iissnan.com/">Next使用文档</a></p><p>综合上面的三个看一下应该就够用了。</p><p>示范网站：<a href="https://btcjjj.com/">先圣博客</a></p><h2 id="创作工具："><a href="#创作工具：" class="headerlink" title="创作工具："></a>创作工具：</h2><h3 id="石墨文档："><a href="#石墨文档：" class="headerlink" title="石墨文档："></a>石墨文档：</h3><h4 id="优点：-6"><a href="#优点：-6" class="headerlink" title="优点："></a>优点：</h4><ul><li><p>随时保存内容</p></li><li><p>版本控制系统</p></li><li><p>小型多人合作免费</p></li></ul><h4 id="缺点：-6"><a href="#缺点：-6" class="headerlink" title="缺点："></a>缺点：</h4><ul><li>图片有防盗链，难以复制到其他平台</li></ul><h3 id="Typora："><a href="#Typora：" class="headerlink" title="Typora："></a>Typora：</h3><h4 id="优点：-7"><a href="#优点：-7" class="headerlink" title="优点："></a>优点：</h4><ul><li>最好用的Markdown编辑器，所见即所得</li><li>支持多工具上传图片，如PicGo</li></ul><h4 id="缺点：-7"><a href="#缺点：-7" class="headerlink" title="缺点："></a>缺点：</h4><ul><li>无网络备份</li><li>现在需要付费</li></ul><h3 id="语雀："><a href="#语雀：" class="headerlink" title="语雀："></a>语雀：</h3><h4 id="优点：-8"><a href="#优点：-8" class="headerlink" title="优点："></a>优点：</h4><ul><li>支持多种格式的内容导入，包括Markdown</li><li>支持多种类型的内容创造，如思维导图</li></ul><h4 id="缺点：-8"><a href="#缺点：-8" class="headerlink" title="缺点："></a>缺点：</h4><ul><li>公开文章可以被举报删除</li><li>图片开启防盗链，难以分享</li></ul>]]></content>
+    
+    
+    <summary type="html">很大程度上的不自由都是人为因素，比如敏感词汇。在这个基础上，我想要一种不受审查的内容/内容平台。</summary>
+    
+    
+    
+    <category term="写作" scheme="http://btcjjj.com/categories/%E5%86%99%E4%BD%9C/"/>
+    
+    
+    <category term="写作" scheme="http://btcjjj.com/tags/%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>第一次购买VPS搭建梯子</title>
@@ -421,29 +442,6 @@
     
     
     <summary type="html">GitHub博客3</summary>
-    
-    
-    
-    <category term="博客搭建" scheme="http://btcjjj.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-    <category term="内容创作" scheme="http://btcjjj.com/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/"/>
-    
-    <category term="博客搭建" scheme="http://btcjjj.com/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github博客开发篇2：利用jsdelivr做图床分享链接。</title>
-    <link href="http://btcjjj.com/2021/08/01/2021-08-01-Github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E7%AF%872%EF%BC%9A%E5%88%A9%E7%94%A8jsdelivr%E5%81%9A%E5%9B%BE%E5%BA%8A%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E3%80%82/"/>
-    <id>http://btcjjj.com/2021/08/01/2021-08-01-Github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E7%AF%872%EF%BC%9A%E5%88%A9%E7%94%A8jsdelivr%E5%81%9A%E5%9B%BE%E5%BA%8A%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E3%80%82/</id>
-    <published>2021-08-01T11:00:00.000Z</published>
-    <updated>2021-12-06T12:52:20.777Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1：你应该阅读前面一篇文章。"><a href="#1：你应该阅读前面一篇文章。" class="headerlink" title="1：你应该阅读前面一篇文章。"></a>1：你应该阅读前面一篇文章。</h1><p><a href="https://bihu.com/article/1622368407">币乎：如何利用Matataki和Github搭建个人博客，永久保存数据？</a></p><p><a href="https://bafybeia6iwn63i3g2xegnkrxrpbrodfpyql6glah3nxenoksfhdd3ukspq.ipfs.infura-ipfs.io/">IPFS：如何利用Matataki和Github搭建个人博客，永久保存数据？</a></p><p><a href="https://btcjjj.com/2021/07/2021-07-31-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Matataki%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%B0%B8%E4%B9%85%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%EF%BC%9F/">博客：如何利用Matataki和Github搭建个人博客，永久保存数据？</a></p><h1 id="2：为什么能够永久保存数据？"><a href="#2：为什么能够永久保存数据？" class="headerlink" title="2：为什么能够永久保存数据？"></a>2：为什么能够永久保存数据？</h1><p>1：你随时可以打包下载你的所有数据，在GitHub仓库。</p><p>2：我相信开源的精神会一直流传下去的。</p><h1 id="3：我们进行更加复杂的操作，和一些问题的解决方法。"><a href="#3：我们进行更加复杂的操作，和一些问题的解决方法。" class="headerlink" title="3：我们进行更加复杂的操作，和一些问题的解决方法。"></a>3：我们进行更加复杂的操作，和一些问题的解决方法。</h1><h2 id="1：文章相关"><a href="#1：文章相关" class="headerlink" title="1：文章相关"></a>1：文章相关</h2><h3 id="自定义封面"><a href="#自定义封面" class="headerlink" title="自定义封面"></a>自定义封面</h3><p>我们不想随机封面或者无封面，我们要自定义封面，这个要求当然是被允许的。</p><p>我们修改一篇文章，或者添加一篇文章。</p><p>在里面加入下面这个内容：</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/1.png" alt="img"></p><p>我们尝试着添加一下吧：</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/2.png" alt="img"></p><p>然后我们更新文件内容。</p><p>这里刷新不出来，所以我用其他的链接先尝试，后面再告知步骤。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/3.png" alt="img"></p><p>可以显示的，说明添加方式是没有问题的，图片链接的问题后面再说。</p><h3 id="文章摘要"><a href="#文章摘要" class="headerlink" title="文章摘要"></a>文章摘要</h3><p>就是在预览界面的文字内容，可以自定义，也可以默认。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/4.png" alt="img"></p><p>这篇文章就可以看到没有设置摘要，所以默认了大概200字的范围。</p><p>官方的教程是这样的：</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/5.png" alt="img"></p><p>就像上图显示的那样。</p><p>我们就把上面的nap昨天的文章修改一下吧：</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/6.png" alt="img"></p><p>我们保存，来查看一下效果如何吧？</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/7.png" alt="img"></p><p>很棒，已经可以自定义摘要了。</p><h3 id="分类与标签"><a href="#分类与标签" class="headerlink" title="分类与标签"></a>分类与标签</h3><p>什么是分类与标签，在昨天的教程里面，其实并没有写入分类和标签。</p><p>他是为了快速的区别文章的类型而设计的。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/8.png" alt="img"></p><p>所以分类是文章下面的一个可以显示的内容。</p><p>比如：</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/9.png" alt="img"></p><p>什么是标签呢？</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/10.png" alt="img"></p><p>这些都是标签，有的还是之前同步过来的，当然你也可以去修改。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/11.png" alt="img"></p><p>我们保存内容，去看看效果如何吧？</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/12.png" alt="img"></p><h2 id="2：图片和链接"><a href="#2：图片和链接" class="headerlink" title="2：图片和链接"></a>2：图片和链接</h2><p>上面的问题都是小问题，不影响阅读，可是下面的问题就要命了。</p><p><strong>如果文章中的图片链接挂了怎么办？</strong></p><p>因为他的保存格式是.md，所以是Markdown语法。</p><p>这个文本模式，有一个很大的特定，就是在文章中如果要引用图片，是插入链接的方式显示图片，他本身不保存图片。</p><p>就好像我昨天那篇文章，用他的语法写下来，才16KB的大小。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/13.png" alt="img"></p><p>但是66张图片却有将近10MB的大小，最重要的事情是，我要分开存储。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/14.png" alt="img"></p><p>我知道为什么要分成存储，因为这样文本更加方便传输和保存，可是图片该怎么办呢？</p><p>我最先想到是，既然文章都放在GitHub了，那么图片也放进去，我们新建一个文件夹专门保存图片即可。</p><p>于是，说干就干，我创建了JPG的文件夹，当然你要叫photo也可以的。</p><p>所以，我就先上传了这样的一张图片，在GitHub仓库。</p><p><a href="https://github.com/keyxec/key/blob/source/source/JPG/%E5%B0%81%E9%9D%A2%E9%BB%91%E5%AE%A2.jpg">https://github.com/keyxec/key/blob/source/source/JPG/%E5%B0%81%E9%9D%A2%E9%BB%91%E5%AE%A2.jpg</a></p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/15.png" alt="img"></p><p>在GitHub，当然可以轻松的预览图片，可是一旦放入了博客就变得很奇怪，无法显示了。</p><p>在度娘和谷歌的帮助下，我找到了解决问题的方法，是一个名叫<a href="https://www.jsdelivr.com/%E7%BD%91%E7%AB%99%E3%80%82">https://www.jsdelivr.com/网站。</a></p><p><a href="https://www.jsdelivr.com/github">https://www.jsdelivr.com/github</a></p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/1/16.png" alt="img"></p><p>当你输入你的GitHub仓库具体文件链接后，你会获得一个分享链接。</p><p>分享链接的的格式如下所示：</p><p><a href="https://cdn.jsdelivr.net/gh/keyxec/key@source/source/JPG/%E5%B0%81%E9%9D%A2%E9%BB%91%E5%AE%A2.jpg">https://cdn.jsdelivr.net/gh/keyxec/key@source/source/JPG/%E5%B0%81%E9%9D%A2%E9%BB%91%E5%AE%A2.jpg</a></p><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84GitHub%E8%B4%A6%E5%8F%B7/%E4%BB%93%E5%BA%93@%E5%88%86%E6%94%AF/%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80">https://cdn.jsdelivr.net/gh/你的GitHub账号/仓库@分支/图片地址</a></p><p>当然，如果你继续往你的GitHub仓库存图片，那么就无需再次获取，修改地址即可访问。</p><p>一般的情况下，在国内可以快速的打开该文件，因为jsdelivr有国内的CDN。</p><p>那么，再插入该文件链接即可，源文件在GitHub，不影响操作。</p><p>即使有一天jsdelivr挂了，也不会造成源文件的损失，这一点非常重要。</p><p>第二篇就暂时写到这里，后续更多的操作下篇再说。</p>]]></content>
-    
-    
-    <summary type="html">GitHub博客2</summary>
     
     
     
