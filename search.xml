@@ -2735,4 +2735,31 @@
         <tag>阿里云</tag>
       </tags>
   </entry>
+  <entry>
+    <title>腾讯云函数搭建博客WordPress</title>
+    <url>/2022/01/23/2022-01-23-%E8%85%BE%E8%AE%AF%E4%BA%91%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="1：配置一个Serverless-云函数"><a href="#1：配置一个Serverless-云函数" class="headerlink" title="1：配置一个Serverless 云函数"></a>1：配置一个Serverless 云函数</h3><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642939989332-3e635c6d-6a01-46f7-932f-d98023d86556.png" alt="img"></p>
+<p>高级设置，省略留空。</p>
+<p>请注意，一定要是<strong>生产环境prod</strong>。</p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940371762-6ddc0595-003e-4432-953a-2d159da7129b.png" alt="img"></p>
+<h3 id="2：安装WordPress"><a href="#2：安装WordPress" class="headerlink" title="2：安装WordPress"></a>2：安装WordPress</h3><p>打开上图里面的首页地址：</p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940470470-75aeb2e2-9eab-40e8-be71-77eb88c05d67.png" alt="img"></p>
+<p>重点填写一下用户名和密码。</p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940580215-545c139f-6985-437c-b9c9-28997577c378.png" alt="img"></p>
+<p>很快就成功了，我们登录一下。</p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940641105-e18bd1f6-d17f-4db3-955c-584720dfe607.png" alt="img"></p>
+<p>后台登录成功！</p>
+<h3 id="3：查看默认网站"><a href="#3：查看默认网站" class="headerlink" title="3：查看默认网站"></a>3：查看默认网站</h3><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940948821-603521e3-52b2-4723-aa4b-afc01414be32.png" alt="img"></p>
+<p>默认的大概是这个样子的。</p>
+<p>其他的可以在后台查看，比如换皮（主题）。</p>
+<p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642941661395-a3b3b456-ca1d-4dcc-8da0-42b76a61d777.png" alt="img"></p>
+<p>总的来说还是非常简单上手的，毕竟把很多概念都淡化了，如果好用的话，我可以考虑迁移下。</p>
+]]></content>
+      <categories>
+        <category>腾讯云</category>
+      </categories>
+      <tags>
+        <tag>云函数</tag>
+      </tags>
+  </entry>
 </search>

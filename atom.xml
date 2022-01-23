@@ -6,7 +6,7 @@
   <link href="http://btcjjj.com/atom.xml" rel="self"/>
   
   <link href="http://btcjjj.com/"/>
-  <updated>2022-01-17T14:24:08.349Z</updated>
+  <updated>2022-01-23T13:06:10.729Z</updated>
   <id>http://btcjjj.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>腾讯云函数搭建博客WordPress</title>
+    <link href="http://btcjjj.com/2022/01/23/2022-01-23-%E8%85%BE%E8%AE%AF%E4%BA%91%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://btcjjj.com/2022/01/23/2022-01-23-%E8%85%BE%E8%AE%AF%E4%BA%91%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2022-01-23T13:00:00.000Z</published>
+    <updated>2022-01-23T13:06:10.729Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1：配置一个Serverless-云函数"><a href="#1：配置一个Serverless-云函数" class="headerlink" title="1：配置一个Serverless 云函数"></a>1：配置一个Serverless 云函数</h3><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642939989332-3e635c6d-6a01-46f7-932f-d98023d86556.png" alt="img"></p><p>高级设置，省略留空。</p><p>请注意，一定要是<strong>生产环境prod</strong>。</p><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940371762-6ddc0595-003e-4432-953a-2d159da7129b.png" alt="img"></p><h3 id="2：安装WordPress"><a href="#2：安装WordPress" class="headerlink" title="2：安装WordPress"></a>2：安装WordPress</h3><p>打开上图里面的首页地址：</p><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940470470-75aeb2e2-9eab-40e8-be71-77eb88c05d67.png" alt="img"></p><p>重点填写一下用户名和密码。</p><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940580215-545c139f-6985-437c-b9c9-28997577c378.png" alt="img"></p><p>很快就成功了，我们登录一下。</p><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940641105-e18bd1f6-d17f-4db3-955c-584720dfe607.png" alt="img"></p><p>后台登录成功！</p><h3 id="3：查看默认网站"><a href="#3：查看默认网站" class="headerlink" title="3：查看默认网站"></a>3：查看默认网站</h3><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642940948821-603521e3-52b2-4723-aa4b-afc01414be32.png" alt="img"></p><p>默认的大概是这个样子的。</p><p>其他的可以在后台查看，比如换皮（主题）。</p><p><img src="https://wangpanxs.oss-cn-beijing.aliyuncs.com/img/1642941661395-a3b3b456-ca1d-4dcc-8da0-42b76a61d777.png" alt="img"></p><p>总的来说还是非常简单上手的，毕竟把很多概念都淡化了，如果好用的话，我可以考虑迁移下。</p>]]></content>
+    
+    
+    <summary type="html">记录</summary>
+    
+    
+    
+    <category term="腾讯云" scheme="http://btcjjj.com/categories/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+    
+    <category term="云函数" scheme="http://btcjjj.com/tags/%E4%BA%91%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>阿里云搭建梯子测试</title>
@@ -426,29 +447,6 @@
     <category term="翻墙" scheme="http://btcjjj.com/tags/%E7%BF%BB%E5%A2%99/"/>
     
     <category term="科学上网" scheme="http://btcjjj.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>记录是每一个币圈人的必须品质。</title>
-    <link href="http://btcjjj.com/2021/08/10/2021-08-10-%E8%AE%B0%E5%BD%95%E6%98%AF%E6%AF%8F%E4%B8%80%E4%B8%AA%E5%B8%81%E5%9C%88%E4%BA%BA%E7%9A%84%E5%BF%85%E9%A1%BB%E5%93%81%E8%B4%A8%E3%80%82/"/>
-    <id>http://btcjjj.com/2021/08/10/2021-08-10-%E8%AE%B0%E5%BD%95%E6%98%AF%E6%AF%8F%E4%B8%80%E4%B8%AA%E5%B8%81%E5%9C%88%E4%BA%BA%E7%9A%84%E5%BF%85%E9%A1%BB%E5%93%81%E8%B4%A8%E3%80%82/</id>
-    <published>2021-08-10T11:00:00.000Z</published>
-    <updated>2021-12-06T12:51:16.822Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1：疫情"><a href="#1：疫情" class="headerlink" title="1：疫情"></a>1：疫情</h1><p>最重要的东西写在最前面。<strong>生命是最重要的。</strong></p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/10/1.jpg" alt="img"></p><p>因为我自己这边已经开始严格的防控了，封锁了相关的出入口（道路）。</p><p>到这个时候，才想起来，原来这次疫情还没有彻底结束。</p><p>保护好自己，生命是最重要的。</p><p>另外，我看见了很多诬蔑的文章，中国政府是所有政府中对疫情对抗最有效的。</p><h1 id="2：代币-空投"><a href="#2：代币-空投" class="headerlink" title="2：代币/空投"></a>2：代币/空投</h1><p>能够免费获得一种新的代币，这种事情肯定要去做。</p><p>至于之后确定了值不值得，那是尝试了之后才知道的事情。</p><p>譬如某些水龙头网站，一次验证码只给1-2聪比特币，完全就可以忽略掉。</p><p>我们获取价值更高的代币，或者寻找没有价值的空投。</p><p>因为每个人的时间都是有限的，所以不能去浪费。</p><p>未知的东西可能蕴含大的价值，这有些像开盲盒。</p><p>但是人们喜欢确定的事物，比如确定的价值——RMB。</p><h1 id="3：记录-总结"><a href="#3：记录-总结" class="headerlink" title="3：记录/总结"></a>3：记录/总结</h1><p>每一个程序员都有些技术总结的习惯。</p><p>一个方面是因为可以加深印象和理解。</p><p>另外一个方面是因为，下次要用的时候可以方便查找。</p><p>就好像一些人喜欢记录总结的开支（大额），然后进行规划。</p><p>总之，有计划强过没计划，有原则胜过无原则。</p><p>无论你是当一个交易员，还是做一名撸羊毛的，或者是开发策划。</p><p>我相信所有人都有记录总结的需要。</p><p>有一些大佬会记录所有的空投项目，然后推送到网站，并且定期检测是否发币等。</p><p>在我看来，记录这个习惯是需要保持的。</p><p>我们在面对很多东西的时候，如果没有很好的规划和记录，那么很多东西都会忘记。</p><h2 id="举一个最简单的例子："><a href="#举一个最简单的例子：" class="headerlink" title="举一个最简单的例子："></a>举一个最简单的例子：</h2><p>因为很多的活动的原因，我们会去注册各种的钱包，来参加一些活动。</p><p>对于是否能够获得代币，以及获得了多少的代币，很多时候我们是没有时间去看的。</p><p>如果从一开始就忘记了保存好，钱包私钥/助记词，那么就会很尴尬。</p><p>电子设备的更新换代时间比你想象的还要快。</p><p>手机损坏可能有很多的原因，手机摔了，掉了，被偷了，老旧了，电池坏了等。</p><p>你要么去保存到云端，要么就离线抄写。</p><p>（虽然所有的钱包都提示不要联网保存，但实际上用云端保存的人真不少）</p><p>造成的原因大概如下：</p><p>我的本子可能会坏掉，模糊了，或者因为其他原因丢失。</p><p>只要我不说保存在那里，谁都不知道保存在哪里。</p><p>当然，助记词要是做成电子档案，那不是把钱包打包给别人了吗？</p><p>但是其他的方面我们肯定需要来记录的。</p><h2 id="我举个栗子："><a href="#我举个栗子：" class="headerlink" title="我举个栗子："></a>我举个栗子：</h2><p>小Z是一个新的写手，他来到币乎创作文章。</p><p>第一天，他写了100行，插入10张图片，有30个人点赞，50元收益。</p><p>第二天，他写了100行，插入15张图片，有40个人点赞，60元收益。</p><p>这个时候，他就会在想，为什么收益变多了呢？</p><ol><li><p>可能是因为图片变多了，文章变长了，阅读因子加长。</p></li><li><p>可能是因为点赞的人变多了，收益变多了，阅读人群增加。</p></li></ol><p>然后他就开始了第三天的写作：</p><p>第三天，他写了100行，插入10张图片，有40个人点赞，55元收益。</p><p>所以，他得出结论1：点赞的人数变多，在一般情况下，收益会增加。</p><p>但是，他还是向尝试一下，于是他开始了第四天的写作：</p><p>第四，他写了100行，插入20张图片，有40个人点赞，70元收益。</p><p>所以，他得出结论2：在增加了文章的长度后，阅读因子提升，一般会收益提高。</p><p>这个过程称为：控制变量法。</p><p>小Z用每天的记录和分析，经过尝试，得出结论。</p><p>当然，他也许不会这么轻松，因为现实可能会更加的复杂。</p><p>比如，每天点赞的人不一样，每个人的持仓也不一样，所以带来的收益也不一样。</p><p>在一切都是黑盒（不可见）的情况下，要猜测具体的规则就更加的困难了。</p><p>但是，无论如何，记录，分析，尝试，总结，这个方法肯定是有用的。</p><h2 id="再举个栗子："><a href="#再举个栗子：" class="headerlink" title="再举个栗子："></a>再举个栗子：</h2><p>小K是一个专业的羊毛党，每天撸撸N个空投和活动。</p><p>那么他就更加需要专业的记录和规划了。</p><p>比如：</p><p>活动1：以太坊链项目，7月21-30日活动，单人200币，邀请100币，9月1日开始发放奖励。</p><p>活动2：币安智能链项目，7月21日-25日活动，单人50币，邀请10币，12月开放发放奖励。</p><p>然后，每隔一段时间去项目的网站看看，有没有方法奖励。</p><p>从一开始就记录好，这样就不会太过于缭乱，最后做完还可以重新排序，按照活动结束时间或者奖励发放的时间。</p><p>另外，如果他是开了多个账号的话，务必记录每一个账号和相关的信息。</p><p>毕竟可能账号都有上万个了（因为不同的活动需要的钱包不同）。</p><h2 id="还举个栗子："><a href="#还举个栗子：" class="headerlink" title="还举个栗子："></a>还举个栗子：</h2><p>小Q是区块链项目QQQ的策划，老板让他写一个宣传文案出来。</p><p>小Q写了2个小时，自认为满意后，发送给老板，我们称作：版本1。</p><p>老板看了，摇摇头，说：不是很好，要突出重点，我们是新项目，实力强，资金6……</p><p>小Q想了想，又改了改，写完了，然后再发给老板：版本2。</p><p>老板又嫌弃模板不好看，退回去说，要简单粗暴，体现赚钱的特定。</p><p>小Q又去在换了一套忽悠人的模板，满页面的黄金和金币还有美元符号：版本3。</p><p>老板说，重要的字要特大号，给我回去重新改。</p><p>小Q又用特大号字体，把所有的重点，都圈出来了：版本4。</p><p>这时候，老板想了想，又说，最开始的那个版本不错，你把这个大字加上去。</p><p>小Q猝。</p><p>开玩笑的，但事实可能更加残酷。</p><p>如果使用传统的word，固然功能强大，但是却缺少了版本管理的功能。</p><p>毕竟不是每个人都会把所有版本都保存一份。</p><p>还好的是，现在的产品都有版本控制的系统。</p><h2 id="我们以几款常见的软件为例："><a href="#我们以几款常见的软件为例：" class="headerlink" title="我们以几款常见的软件为例："></a>我们以几款常见的软件为例：</h2><h3 id="1：石墨文档。"><a href="#1：石墨文档。" class="headerlink" title="1：石墨文档。"></a>1：石墨文档。</h3><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/10/2.jpg" alt="img"></p><p>我们可以轻松的在右上角，查看历史版本里面看到每次的保存情况，和所有的保存版本。</p><h3 id="2：语雀"><a href="#2：语雀" class="headerlink" title="2：语雀"></a>2：语雀</h3><p>他是一款云端的知识库。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/10/3.jpg" alt="img"></p><p>他可以可以轻松的查看历史版本，并且随意的恢复任何版本。</p><p>他还支持查看版本的差异。（我觉得这个比较棒）</p><h3 id="3：135编辑器"><a href="#3：135编辑器" class="headerlink" title="3：135编辑器"></a>3：135编辑器</h3><p>当然，其他的网络编辑器也可以，都差不多的。</p><p><img src="https://cdn.jsdelivr.net/gh/tsl1997/me@source/source/jpg/2021/8/10/4.jpg" alt="img"></p><p>他们也提供历史版本，可以一键的恢复，并且复制到其他地方貌似也不错。</p><p>所以，这几乎可以代表基本市面上的写作软件都支持版本控制了。</p><p>因为这已经成为了一个硬性的需求。</p><p>尤其是在团队合作中，我们想知道那些人在更新表格和文件，哪些人在摸鱼。</p><p>使用某些软件就可以展开多人在线编辑了，并且每一次编辑和修改都会提示，是谁修改了内容，修改了哪些内容，还可以一键回复以前的任何版本（防止有人修改错误或者胡乱修改）。</p><p>试想看，加入上面的例子中的撸羊毛专家小K，一天撸10个活动，一年就撸了3600个活动。</p><p>这么多的活动更新和内容，一个人是做不完的。</p><p>假如他开始和别人合作，一个人去找活动，一个人去测试活动，一个人写文章和宣传，一个人最后跟踪活动，他们可以用一个大的表格（或者其他文件）来展开线上编辑。</p><p>这个是合理的，也容易完成的。</p><p>同理，如果是小Q做策划，他只需要把活动的文案链接给老板，老板就可以查看了，也不用每次都传输文件了，同样还不用为了修改而保存N个版本的内容。</p><p>老板说要第一个版本，那就恢复第一个版本，容易多了。</p><p>我们要更好的使用工具来帮助我们。</p><p>学会记录，分析，修改，尝试，总结，这是很重要的。</p><p>你也许都不是上面的例子，但是你也会需要好的工具。</p><p>最后，没有用过语雀的可以去注册一个：</p><p>注册地址：</p><p>点击链接快来和我一起加入语雀文档，体验全新知识创作，让你的协作更高效！</p><p> <a href="https://www.yuque.com/login?platform=wechat&amp;inviteToken=d250cce7a9bfb322880f20b1d1c4cdc4c0fe4f987f138eed2004d07cb8a1311b">https://www.yuque.com/login?platform=wechat&amp;inviteToken=d250cce7a9bfb322880f20b1d1c4cdc4c0fe4f987f138eed2004d07cb8a1311b</a></p><p>阿里高校送6个月语雀会员：<a href="https://www.yuque.com/e/channel?channel=aliyungaoxiao">https://www.yuque.com/e/channel?channel=aliyungaoxiao</a></p><p>开发者文档送3个月语雀会员：<a href="https://www.yuque.com/e/channel?channel=aliyunkfz">https://www.yuque.com/e/channel?channel=aliyunkfz</a></p>]]></content>
-    
-    
-    <summary type="html">不必看的唠叨</summary>
-    
-    
-    
-    <category term="记录" scheme="http://btcjjj.com/categories/%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="内容创作" scheme="http://btcjjj.com/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/"/>
-    
-    <category term="记录分析" scheme="http://btcjjj.com/tags/%E8%AE%B0%E5%BD%95%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
