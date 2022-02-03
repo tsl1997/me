@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"btcjjj.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="markdown语法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="typora语法">
+<meta property="og:url" content="http://btcjjj.com/2022/02/03/2022-02-03-typora%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:site_name" content="先圣博客">
+<meta property="og:description" content="markdown语法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.baidu.com/img/flexible/logo/pc/index.png">
+<meta property="article:published_time" content="2022-02-03T14:00:00.000Z">
+<meta property="article:modified_time" content="2022-02-03T14:34:15.928Z">
+<meta property="article:author" content="先圣">
+<meta property="article:tag" content="MD">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.baidu.com/img/flexible/logo/pc/index.png">
+
+<link rel="canonical" href="http://btcjjj.com/2022/02/03/2022-02-03-typora%E8%AF%AD%E6%B3%95/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>typora语法 | 先圣博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="先圣博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">先圣博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-vip">
+
+    <a href="/vip/" rel="section"><i class="fab fa-vuejs fa-fw"></i>官网</a>
+
+  </li>
+        <li class="menu-item menu-item-airdrop">
+
+    <a href="/airdrop/" rel="section"><i class="fas fa-gift fa-fw"></i>空投</a>
+
+  </li>
+        <li class="menu-item menu-item-trophy">
+
+    <a href="/trophy/" rel="section"><i class="fas fa-trophy fa-fw"></i>成就</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://btcjjj.com/2022/02/03/2022-02-03-typora%E8%AF%AD%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gateway.pinata.cloud/ipfs/QmbRRdkY81kDFFYgSYdJV9h99KU8mP7bQUMQuY5HB65eV8">
+      <meta itemprop="name" content="先圣">
+      <meta itemprop="description" content="学习，永无止境！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="先圣博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          typora语法
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-02-03 22:00:00 / 修改时间：22:34:15" itemprop="dateCreated datePublished" datetime="2022-02-03T22:00:00+08:00">2022-02-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/typora/" itemprop="url" rel="index"><span itemprop="name">typora</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>1.1k</span>
+            </span>
+            <div class="post-description">markdown语法</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>[toc]</p>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>ctrl + 1 就是代表一级标题，以此类推。</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><p>六级标题</p>
+<h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><p>Ctrl + shift + K 之后输入语言名称即可。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + shift + K</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h2><p>用*包裹文本，或者快捷键ctrl + I</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*斜体*</span><br></pre></td></tr></table></figure>
+
+<p><em>斜体</em></p>
+<h2 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h2><p>用**包裹文本，或者快捷键ctrl + B</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**加粗**</span><br></pre></td></tr></table></figure>
+
+<p><strong>加粗</strong></p>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>用<u>包裹文本，快捷键：ctrl+U</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+
+<p><u>下划线</u></p>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>用~~包裹文本，快捷键：shift+alt+5</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
+
+<p><del>删除线</del></p>
+<h2 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h2><p>用<center>包裹文本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;center&gt;居中&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+
+<center>居中</center>
+
+
+
+<h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><p>脚注的内容的后面输入：左中括号+次方号+空格+脚注名+右中括号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Typora[^ 1]</span><br></pre></td></tr></table></figure>
+
+<p>Typora<a href="%E8%BF%99%E6%98%AF%E8%84%9A%E6%B3%A8">^ 1</a></p>
+<h2 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h2><p>视图——开发者工具（Shift+F12），打开html代码调试模式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在span后插入 style=&quot;color:文字颜色&quot;</span><br></pre></td></tr></table></figure>
+
+<p>我是红色的</p>
+<p>颜色单词自己百度。</p>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol>
+<li>快捷键：<code>ctrl+shift+[</code></li>
+</ol>
+<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><ul>
+<li>快捷键：<code>ctrl+shift+]</code></li>
+</ul>
+<h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><p>回车后使用tab键可创建下一级别列表，也可以使用减少缩进和增加缩进的快捷键<code>ctrl+[</code> 和 <code>ctrl+]</code>。</p>
+<ol>
+<li>a<ol>
+<li>a<ol>
+<li>a</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><p>1</p>
+<ul>
+<li><p>2</p>
+<ul>
+<li>3  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><ul>
+<li>输入三个及以上的星号<code>*</code>、减号<code>-</code>（最为方便)、下划线<code>_</code>，然后回车来建立一个分隔线</li>
+</ul>
+<hr>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 内容1</span><br><span class="line">&gt;&gt; 内容2</span><br><span class="line">&gt;&gt;&gt; 内容3</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>内容1</p>
+<blockquote>
+<p>内容2</p>
+<blockquote>
+<p>内容3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><p>使用<code>Ctrl</code>+<code>T</code>快捷键来插入表格，设定行数和列数，就出现表格了。</p>
+<table>
+<thead>
+<tr>
+<th align="center">这是表格</th>
+<th align="center">标头</th>
+<th align="center">居中</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">这是内容</td>
+<td align="center">可以直接设置</td>
+<td align="center">非常方便</td>
+</tr>
+</tbody></table>
+<h1 id="生成目录"><a href="#生成目录" class="headerlink" title="生成目录"></a>生成目录</h1><p>输入<code>[toc]</code>后回车即可生成目录（toc：table of conent）,建议放在文章开头，例如本文。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[toc]</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h1><h2 id="显示链接"><a href="#显示链接" class="headerlink" title="显示链接"></a>显示链接</h2><p>在<code>&lt;</code> <code>&gt;</code>里面输入链接即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;www.btcjjj.com&gt;</span><br></pre></td></tr></table></figure>
+
+<p>&lt;<a target="_blank" rel="noopener" href="http://www.btcjjj.com&gt;/">www.btcjjj.com&gt;</a></p>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><ul>
+<li>输入<code>[]()</code>即可，在<code>[]</code>里面输入链接说明，<code>()</code>里面输入链接地址</li>
+<li>快捷键：ctrl + K</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[www.btcjjj.com](www.btcjjj.com)</span><br></pre></td></tr></table></figure>
+
+<p><a href="www.btcjjj.com">www.btcjjj.com</a></p>
+<h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>输入！<code>[]()</code>即可，在<code>[]</code>里面输入链接说明，<code>()</code>里面输入链接地址</p>
+<p>强烈建议使用图床地址，不要使用本地文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![百度图标](https://www.baidu.com/img/flexible/logo/pc/index.png)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://www.baidu.com/img/flexible/logo/pc/index.png" alt="百度图标">****</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ul>
+<li><p><code>ctrl</code>+<code>F</code>：快速搜索（很实用）</p>
+</li>
+<li><p><code>ctrl</code>+<code>P</code>：打开笔记</p>
+</li>
+<li><p><code>ctrl</code>+<code>N</code>：新建文件</p>
+</li>
+<li><p>调转至文首：<code>ctrl</code>+<code>Home</code></p>
+</li>
+<li><p>调转至文末：<code>ctrl</code>+<code>End</code></p>
+</li>
+<li><p>调转至所选内容：<code>ctrl</code>+<code>J</code></p>
+</li>
+<li><p>插入表情请查看:<a target="_blank" rel="noopener" href="https://sunhwee.com/posts/a927e90e.html#toc-heading-8">点我</a></p>
+</li>
+</ul>
+<p>以后想到啥更新啥，就这样了，仅作为笔记使用。</p>
+
+    </div>
+    <div>
+    
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+    
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>先圣
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://btcjjj.com/2022/02/03/2022-02-03-typora%E8%AF%AD%E6%B3%95/" title="typora语法">http://btcjjj.com/2022/02/03/2022-02-03-typora语法/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/MD/" rel="tag"># MD</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/01/26/2022-01-26-ANS%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E6%B5%8B%E8%AF%95%E6%B4%BB%E5%8A%A8/" rel="prev" title="ANS域名注册测试活动">
+      <i class="fa fa-chevron-left"></i> ANS域名注册测试活动
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.1.1.1.1.</span> <span class="nav-text">五级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="nav-number">3.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%97%E4%BD%93"><span class="nav-number">4.</span> <span class="nav-text">字体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%9C%E4%BD%93"><span class="nav-number">4.1.</span> <span class="nav-text">斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A0%E7%B2%97"><span class="nav-number">4.2.</span> <span class="nav-text">加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="nav-number">4.3.</span> <span class="nav-text">下划线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="nav-number">4.4.</span> <span class="nav-text">删除线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B1%85%E4%B8%AD"><span class="nav-number">4.5.</span> <span class="nav-text">居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%84%9A%E6%B3%A8"><span class="nav-number">4.6.</span> <span class="nav-text">脚注</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%9C%E8%89%B2"><span class="nav-number">4.7.</span> <span class="nav-text">颜色</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">5.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">5.1.</span> <span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">5.2.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8"><span class="nav-number">5.3.</span> <span class="nav-text">任务列表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">6.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%95%E7%94%A8"><span class="nav-number">7.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A1%A8%E6%A0%BC"><span class="nav-number">8.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95"><span class="nav-number">9.</span> <span class="nav-text">生成目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E9%93%BE%E6%8E%A5"><span class="nav-number">10.</span> <span class="nav-text">插入链接</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E9%93%BE%E6%8E%A5"><span class="nav-number">10.1.</span> <span class="nav-text">显示链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="nav-number">10.2.</span> <span class="nav-text">超链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="nav-number">10.3.</span> <span class="nav-text">插入图片</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">11.</span> <span class="nav-text">其他</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="先圣"
+      src="https://gateway.pinata.cloud/ipfs/QmbRRdkY81kDFFYgSYdJV9h99KU8mP7bQUMQuY5HB65eV8">
+  <p class="site-author-name" itemprop="name">先圣</p>
+  <div class="site-description" itemprop="description">学习，永无止境！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">31</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tsl1997" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tsl1997" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:btcabc@163.com" title="E-Mail → mailto:btcabc@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/btc999xs" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;btc999xs" rel="noopener" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/7502988975" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7502988975" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://btcjjj.com/atom.xml" title="RSS → https:&#x2F;&#x2F;btcjjj.com&#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">先圣</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
