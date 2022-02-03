@@ -2832,8 +2832,7 @@
   <entry>
     <title>typora语法</title>
     <url>/2022/02/03/2022-02-03-typora%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>[toc]</p>
-<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>ctrl + 1 就是代表一级标题，以此类推。</p>
+    <content><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>ctrl + 1 就是代表一级标题，以此类推。</p>
 <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><p>六级标题</p>
 <h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><p>Ctrl + shift + K 之后输入语言名称即可。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Ctrl + shift + K</span><br></pre></td></tr></table></figure>
@@ -2856,8 +2855,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
 
 <p><del>删除线</del></p>
-<h2 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h2><p>用<center>包裹文本</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;居中&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;居中&lt;/center&gt;</span><br></pre></td></tr></table></figure>
 
 <center>居中</center>
 
